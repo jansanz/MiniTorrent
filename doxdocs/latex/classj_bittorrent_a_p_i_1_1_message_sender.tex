@@ -1,0 +1,79 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_sender}{
+\section{jBittorrentAPI.MessageSender Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_message_sender}\index{jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}}
+}
+Collaboration diagram for jBittorrentAPI.MessageSender:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_ae0b0ba0699973667798e01c4385092ab}{
+{\bfseries MessageSender} (String id, OutputStream os)}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_ae0b0ba0699973667798e01c4385092ab}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_a8cb1e6bf8e2f6b9112dea4d406889c31}{
+void {\bfseries addOutgoingListener} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_outgoing_listener}{OutgoingListener} listener)}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_a8cb1e6bf8e2f6b9112dea4d406889c31}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_a38c52462e64fa261ae24058581cb446b}{
+void {\bfseries removeOutgoingListener} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_outgoing_listener}{OutgoingListener} listener)}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_a38c52462e64fa261ae24058581cb446b}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_a5cfc95d395301fa761979ebc81468fd3}{
+\hyperlink{interfacej_bittorrent_a_p_i_1_1_outgoing_listener}{OutgoingListener}\mbox{[}$\,$\mbox{]} {\bfseries getOutgoingListeners} ()}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_a5cfc95d395301fa761979ebc81468fd3}
+
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_message_sender_af5abb658e232e429343c8deff1569736}{addMessageToQueue} (\hyperlink{classj_bittorrent_a_p_i_1_1_message}{Message} m)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_message_sender_aa9773f42b5d477b971f1438e458aa5a5}{run} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_message_sender_a8a81081eff1e8b940205a86b457d666b}{stopThread} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_message_sender_a3323d46a5bd9b37824f3cdff188baf17}{fireConnectionClosed} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_message_sender_a21a7fc624fa156b056028a36bbf136f8}{fireKeepAliveSent} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Thread created to send message to the remote peer. Hold a queue for outgoing messages 
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_af5abb658e232e429343c8deff1569736}{
+\index{jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}!addMessageToQueue@{addMessageToQueue}}
+\index{addMessageToQueue@{addMessageToQueue}!jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}}
+\subsubsection[{addMessageToQueue}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.MessageSender.addMessageToQueue ({\bf Message} {\em m})}}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_af5abb658e232e429343c8deff1569736}
+Puts the message in parameter in the queue, waiting to be sent 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]\hyperlink{classj_bittorrent_a_p_i_1_1_message}{Message} \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_a3323d46a5bd9b37824f3cdff188baf17}{
+\index{jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}!fireConnectionClosed@{fireConnectionClosed}}
+\index{fireConnectionClosed@{fireConnectionClosed}!jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}}
+\subsubsection[{fireConnectionClosed}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.MessageSender.fireConnectionClosed ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_a3323d46a5bd9b37824f3cdff188baf17}
+Called when the connection to the peer has been closed. Advertise the \hyperlink{classj_bittorrent_a_p_i_1_1_download_task}{DownloadTask} that there is no more connection to the remote peer. \hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_a21a7fc624fa156b056028a36bbf136f8}{
+\index{jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}!fireKeepAliveSent@{fireKeepAliveSent}}
+\index{fireKeepAliveSent@{fireKeepAliveSent}!jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}}
+\subsubsection[{fireKeepAliveSent}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.MessageSender.fireKeepAliveSent ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_a21a7fc624fa156b056028a36bbf136f8}
+Called when a keep-\/alive message has been sent. This happens about every 2 minutes if there has not been any other messages sent to avoid the connection to be closed by the remote peer \hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_aa9773f42b5d477b971f1438e458aa5a5}{
+\index{jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}!run@{run}}
+\index{run@{run}!jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.MessageSender.run ()}}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_aa9773f42b5d477b971f1438e458aa5a5}
+Sends messages from the queue. While the queue is not empty, polls message from it and sends it to the remote peer. If the queue is empty for more than 2 minutes, a keep-\/alive message is sent and the \hyperlink{classj_bittorrent_a_p_i_1_1_download_task}{DownloadTask} is advertised \hypertarget{classj_bittorrent_a_p_i_1_1_message_sender_a8a81081eff1e8b940205a86b457d666b}{
+\index{jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}!stopThread@{stopThread}}
+\index{stopThread@{stopThread}!jBittorrentAPI::MessageSender@{jBittorrentAPI::MessageSender}}
+\subsubsection[{stopThread}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.MessageSender.stopThread ()}}
+\label{classj_bittorrent_a_p_i_1_1_message_sender_a8a81081eff1e8b940205a86b457d666b}
+Sets the 'run' variable to false, causing the thread to stop on its next loop. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/MessageSender.java\end{DoxyCompactItemize}

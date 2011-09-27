@@ -1,0 +1,132 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece}{
+\section{jBittorrentAPI.Piece Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_piece}\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_a2da89d5a8d52b6e06dd05f8b3f84d6d6}{
+{\bfseries Piece} (int index, int length, int blockSize, byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_piece_ad13fc2f3c99d51ef782f875d882341cc}{sha1})}
+\label{classj_bittorrent_a_p_i_1_1_piece_a2da89d5a8d52b6e06dd05f8b3f84d6d6}
+
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_piece_ae94988ffbe6559c92c33020151c5987b}{Piece} (int index, int length, int blockSize, byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_piece_ad13fc2f3c99d51ef782f875d882341cc}{sha1}, TreeMap$<$ Integer, Integer $>$ m)
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_a430b8a4e4bbabf7149dd0eedea254aae}{
+void {\bfseries clearData} ()}
+\label{classj_bittorrent_a_p_i_1_1_piece_a430b8a4e4bbabf7149dd0eedea254aae}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_a3b9c62c0d02c2b548f36fc2ecfe80c45}{
+void {\bfseries setFileAndOffset} (int file, int offset)}
+\label{classj_bittorrent_a_p_i_1_1_piece_a3b9c62c0d02c2b548f36fc2ecfe80c45}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_ab97f99a47ffc3ce338ac53306b005032}{
+TreeMap {\bfseries getFileAndOffset} ()}
+\label{classj_bittorrent_a_p_i_1_1_piece_ab97f99a47ffc3ce338ac53306b005032}
+
+\item 
+synchronized int \hyperlink{classj_bittorrent_a_p_i_1_1_piece_ab4afd0119225a5a9b0d11195b388ecf5}{getIndex} ()
+\item 
+synchronized int \hyperlink{classj_bittorrent_a_p_i_1_1_piece_a2f2bb859545d2369921e08d3b3b417bd}{getLength} ()
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_piece_a57e510992d23328b321f623af02c118b}{setBlock} (int offset, byte\mbox{[}$\,$\mbox{]} data)
+\item 
+synchronized byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_piece_af77baf7a92f73795d1e98b85e1ec512d}{data} ()
+\item 
+synchronized boolean \hyperlink{classj_bittorrent_a_p_i_1_1_piece_a735377bc6777a087f5f456477cd30183}{verify} ()
+\item 
+synchronized String \hyperlink{classj_bittorrent_a_p_i_1_1_piece_a5f724f5241bc2843435fab2f2a3f7f90}{toString} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_piece_ad13fc2f3c99d51ef782f875d882341cc}{sha1}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a piece according to bittorrent definition. The piece is a part of data of the target file(s)
+
+\begin{DoxyAuthor}{Author}
+Baptiste Dubuis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_ae94988ffbe6559c92c33020151c5987b}{
+\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+\subsubsection[{Piece}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.Piece.Piece (int {\em index}, \/  int {\em length}, \/  int {\em blockSize}, \/  byte\mbox{[}$\,$\mbox{]} {\em sha1}, \/  TreeMap$<$ Integer, Integer $>$ {\em m})}}
+\label{classj_bittorrent_a_p_i_1_1_piece_ae94988ffbe6559c92c33020151c5987b}
+Constructor of a \hyperlink{classj_bittorrent_a_p_i_1_1_piece}{Piece} 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]Index of the piece \item[{\em length}]Length of the piece \item[{\em blockSize}]Size of a block of data \item[{\em sha1}]SHA1 hash that must be verified at the end of download \item[{\em m}]HashTable containing the file(s) this piece belongs to and the index in these \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_af77baf7a92f73795d1e98b85e1ec512d}{
+\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}!data@{data}}
+\index{data@{data}!jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}synchronized byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.Piece.data ()}}
+\label{classj_bittorrent_a_p_i_1_1_piece_af77baf7a92f73795d1e98b85e1ec512d}
+Returns the concatenated value of the pieceBlock map. This represent the piece data \begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_ab4afd0119225a5a9b0d11195b388ecf5}{
+\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+\subsubsection[{getIndex}]{\setlength{\rightskip}{0pt plus 5cm}synchronized int jBittorrentAPI.Piece.getIndex ()}}
+\label{classj_bittorrent_a_p_i_1_1_piece_ab4afd0119225a5a9b0d11195b388ecf5}
+Return the index of the piece \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_a2f2bb859545d2369921e08d3b3b417bd}{
+\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}!getLength@{getLength}}
+\index{getLength@{getLength}!jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+\subsubsection[{getLength}]{\setlength{\rightskip}{0pt plus 5cm}synchronized int jBittorrentAPI.Piece.getLength ()}}
+\label{classj_bittorrent_a_p_i_1_1_piece_a2f2bb859545d2369921e08d3b3b417bd}
+Returns the length of the piece \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_a57e510992d23328b321f623af02c118b}{
+\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}!setBlock@{setBlock}}
+\index{setBlock@{setBlock}!jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+\subsubsection[{setBlock}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.Piece.setBlock (int {\em offset}, \/  byte\mbox{[}$\,$\mbox{]} {\em data})}}
+\label{classj_bittorrent_a_p_i_1_1_piece_a57e510992d23328b321f623af02c118b}
+Set a block of data at the corresponding offset 
+\begin{DoxyParams}{Parameters}
+\item[{\em offset}]Offset of the data within the current piece \item[{\em data}]Data to be set at the given offset \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_a5f724f5241bc2843435fab2f2a3f7f90}{
+\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}!toString@{toString}}
+\index{toString@{toString}!jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+\subsubsection[{toString}]{\setlength{\rightskip}{0pt plus 5cm}synchronized String jBittorrentAPI.Piece.toString ()}}
+\label{classj_bittorrent_a_p_i_1_1_piece_a5f724f5241bc2843435fab2f2a3f7f90}
+Print some information about the \hyperlink{classj_bittorrent_a_p_i_1_1_piece}{Piece} \begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_a735377bc6777a087f5f456477cd30183}{
+\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}!verify@{verify}}
+\index{verify@{verify}!jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+\subsubsection[{verify}]{\setlength{\rightskip}{0pt plus 5cm}synchronized boolean jBittorrentAPI.Piece.verify ()}}
+\label{classj_bittorrent_a_p_i_1_1_piece_a735377bc6777a087f5f456477cd30183}
+Verify if the downloaded data corresponds to the original data contained in the torrent by comparing it to the SHA1 hash in the torrent \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_piece_ad13fc2f3c99d51ef782f875d882341cc}{
+\index{jBittorrentAPI::Piece@{jBittorrentAPI::Piece}!sha1@{sha1}}
+\index{sha1@{sha1}!jBittorrentAPI::Piece@{jBittorrentAPI::Piece}}
+\subsubsection[{sha1}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} {\bf jBittorrentAPI.Piece.sha1}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_piece_ad13fc2f3c99d51ef782f875d882341cc}
+SHA1 hash of the piece contained in the torrent file. At the end of the download this value must correspond to the SHA1 hash of the pieceBlock map concatenated 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/Piece.java\end{DoxyCompactItemize}

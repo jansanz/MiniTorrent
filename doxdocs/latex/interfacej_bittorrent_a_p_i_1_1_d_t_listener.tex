@@ -1,0 +1,62 @@
+\hypertarget{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{
+\section{jBittorrentAPI.DTListener Interface Reference}
+\label{interfacej_bittorrent_a_p_i_1_1_d_t_listener}\index{jBittorrentAPI::DTListener@{jBittorrentAPI::DTListener}}
+}
+
+
+Inherits java::util::EventListener.
+
+Inherited by \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager}{jBittorrentAPI.DownloadManager}.Collaboration diagram for jBittorrentAPI.DTListener:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interfacej_bittorrent_a_p_i_1_1_d_t_listener_ad902126897025c72d584ffaaa815f693}{
+void {\bfseries pieceCompleted} (String peerID, int pieceNB, boolean complete)}
+\label{interfacej_bittorrent_a_p_i_1_1_d_t_listener_ad902126897025c72d584ffaaa815f693}
+
+\item 
+\hypertarget{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a219096fedf93e6f1e6f89d12bfe3ac4b}{
+void {\bfseries pieceRequested} (int pieceNB, boolean requested)}
+\label{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a219096fedf93e6f1e6f89d12bfe3ac4b}
+
+\item 
+\hypertarget{interfacej_bittorrent_a_p_i_1_1_d_t_listener_ae0baeb2413f9dcc52dac38b734c4af08}{
+void {\bfseries taskCompleted} (String id, int reason)}
+\label{interfacej_bittorrent_a_p_i_1_1_d_t_listener_ae0baeb2413f9dcc52dac38b734c4af08}
+
+\item 
+\hypertarget{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a70e27740904d1868052fe7f1ceaaecdb}{
+void {\bfseries peerAvailability} (String id, BitSet hasPiece)}
+\label{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a70e27740904d1868052fe7f1ceaaecdb}
+
+\item 
+\hypertarget{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a5a757822f9adfca556a3509d750a9337}{
+void {\bfseries peerReady} (String id)}
+\label{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a5a757822f9adfca556a3509d750a9337}
+
+\item 
+\hypertarget{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a66a5d7bf0ac45819e29ebf4eee60b101}{
+void {\bfseries peerRequest} (String peerID, int piece, int begin, int length)}
+\label{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a66a5d7bf0ac45819e29ebf4eee60b101}
+
+\item 
+\hypertarget{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a78eff293a075471848d2191f21cbcb9d}{
+void {\bfseries addActiveTask} (String id, \hyperlink{classj_bittorrent_a_p_i_1_1_download_task}{DownloadTask} dt)}
+\label{interfacej_bittorrent_a_p_i_1_1_d_t_listener_a78eff293a075471848d2191f21cbcb9d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for managing events launched by the \hyperlink{classj_bittorrent_a_p_i_1_1_download_task}{DownloadTask} class
+
+\begin{DoxyAuthor}{Author}
+Baptiste Dubuis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+
+
+The documentation for this interface was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/DTListener.java\end{DoxyCompactItemize}

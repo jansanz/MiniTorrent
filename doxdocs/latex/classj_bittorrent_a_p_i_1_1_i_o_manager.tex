@@ -1,0 +1,112 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager}{
+\section{jBittorrentAPI.IOManager Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager}\index{jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}}
+}
+Collaboration diagram for jBittorrentAPI.IOManager:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager_a72dddad087c24fc733008a84d3ede92c}{
+{\bfseries IOManager} (String filename)}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager_a72dddad087c24fc733008a84d3ede92c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classj_bittorrent_a_p_i_1_1_i_o_manager_aa6793b275ebb45b76d445296b0e296e9}{save} (byte\mbox{[}$\,$\mbox{]} data, String filename)
+\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_i_o_manager_a5e79391798ed25d06a99845b7ea4a8c1}{readBytesFromStream} (InputStream is)
+\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_i_o_manager_a65bcc486d524bd6d903d59ed0d8b7147}{readBytesFromFile} (File file)
+\item 
+static void \hyperlink{classj_bittorrent_a_p_i_1_1_i_o_manager_a5169f9bdb6f434a7bb3f83586b943a61}{saveFromURL} (InputStream is, String filename)  throws IOException 
+\item 
+static String \hyperlink{classj_bittorrent_a_p_i_1_1_i_o_manager_ae3ba74957fe0fb4a5087c35618e5cfc9}{readUserInput} (String question)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager_a3ac0db4ec39c9f72884465a8d5c101f7}{
+BufferedReader {\bfseries br}}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager_a3ac0db4ec39c9f72884465a8d5c101f7}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager_a660502c41318b90ff6127db51eb24492}{
+BufferedWriter {\bfseries bw}}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager_a660502c41318b90ff6127db51eb24492}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility methods for I/O operations
+
+\begin{DoxyAuthor}{Author}
+Baptiste Dubuis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager_a65bcc486d524bd6d903d59ed0d8b7147}{
+\index{jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}!readBytesFromFile@{readBytesFromFile}}
+\index{readBytesFromFile@{readBytesFromFile}!jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}}
+\subsubsection[{readBytesFromFile}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.IOManager.readBytesFromFile (File {\em file})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager_a65bcc486d524bd6d903d59ed0d8b7147}
+Read all available bytes from the given file 
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]File \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager_a5e79391798ed25d06a99845b7ea4a8c1}{
+\index{jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}!readBytesFromStream@{readBytesFromStream}}
+\index{readBytesFromStream@{readBytesFromStream}!jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}}
+\subsubsection[{readBytesFromStream}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.IOManager.readBytesFromStream (InputStream {\em is})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager_a5e79391798ed25d06a99845b7ea4a8c1}
+Read all bytes available in the stream 
+\begin{DoxyParams}{Parameters}
+\item[{\em is}]InputStream \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager_ae3ba74957fe0fb4a5087c35618e5cfc9}{
+\index{jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}!readUserInput@{readUserInput}}
+\index{readUserInput@{readUserInput}!jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}}
+\subsubsection[{readUserInput}]{\setlength{\rightskip}{0pt plus 5cm}static String jBittorrentAPI.IOManager.readUserInput (String {\em question})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager_ae3ba74957fe0fb4a5087c35618e5cfc9}
+Ask the user for an input 
+\begin{DoxyParams}{Parameters}
+\item[{\em question}]The question that will be asked to the user \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager_aa6793b275ebb45b76d445296b0e296e9}{
+\index{jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}!save@{save}}
+\index{save@{save}!jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}static boolean jBittorrentAPI.IOManager.save (byte\mbox{[}$\,$\mbox{]} {\em data}, \/  String {\em filename})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager_aa6793b275ebb45b76d445296b0e296e9}
+Save the byte array into a file with the give filename 
+\begin{DoxyParams}{Parameters}
+\item[{\em data}]byte\mbox{[}\mbox{]} \item[{\em filename}]String \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_i_o_manager_a5169f9bdb6f434a7bb3f83586b943a61}{
+\index{jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}!saveFromURL@{saveFromURL}}
+\index{saveFromURL@{saveFromURL}!jBittorrentAPI::IOManager@{jBittorrentAPI::IOManager}}
+\subsubsection[{saveFromURL}]{\setlength{\rightskip}{0pt plus 5cm}static void jBittorrentAPI.IOManager.saveFromURL (InputStream {\em is}, \/  String {\em filename})  throws IOException \hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_i_o_manager_a5169f9bdb6f434a7bb3f83586b943a61}
+Save the bytes in the stream to the file in parameter 
+\begin{DoxyParams}{Parameters}
+\item[{\em is}]InputStream \item[{\em filename}]String \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em IOException}]\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/IOManager.java\end{DoxyCompactItemize}

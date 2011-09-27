@@ -1,0 +1,224 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task}{
+\section{jBittorrentAPI.DownloadTask Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_download_task}\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+}
+
+
+Inherits \hyperlink{interfacej_bittorrent_a_p_i_1_1_incoming_listener}{jBittorrentAPI::IncomingListener}, and \hyperlink{interfacej_bittorrent_a_p_i_1_1_outgoing_listener}{jBittorrentAPI::OutgoingListener}.Collaboration diagram for jBittorrentAPI.DownloadTask:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_download_task_a9df91103ea2899e6d56ed0d4bbb91c50}{DownloadTask} (\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} peer, byte\mbox{[}$\,$\mbox{]} fileID, byte\mbox{[}$\,$\mbox{]} myID, boolean init, byte\mbox{[}$\,$\mbox{]} bitfield, Socket s)
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_download_task_a32181ebfc1d30259b58847cd6ffb527b}{DownloadTask} (\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} peer, byte\mbox{[}$\,$\mbox{]} fileID, byte\mbox{[}$\,$\mbox{]} myID, boolean init, byte\mbox{[}$\,$\mbox{]} bitfield)
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_download_task_aa6305d83b8254e0768b5f4cb04d6c7c9}{DownloadTask} (\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} peer, byte\mbox{[}$\,$\mbox{]} fileID, byte\mbox{[}$\,$\mbox{]} myID)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_a0e6aae72189862d442f35a9a0d9953ff}{initConnection} ()  throws UnknownHostException, IOException 
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_a083abaff7ffe593b7994d079e5b5cbe8}{run} ()
+\item 
+synchronized \hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_acc97629e68b6c2cc0cdcf860907f4e09}{getPeer} ()
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_abe8ce5e30e5cf362a889c239685b7885}{requestPiece} (\hyperlink{classj_bittorrent_a_p_i_1_1_piece}{Piece} p)
+\item 
+synchronized int \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_a3449a9a800c67c5a039a50c8ea1757be}{checkDownloaded} ()
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_aee45e53d98af60717f41840bc5e44c73}{connectionClosed} ()
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_aaa3fad9c3cd6b12c46e76d291313060f}{keepAliveSent} ()
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_a3234c0677a09c13fdd7926e894db570d}{messageReceived} (\hyperlink{classj_bittorrent_a_p_i_1_1_message}{Message} m)
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a1241cab9e37da650b1155f51fa007726}{
+synchronized void {\bfseries addDTListener} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{DTListener} listener)}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a1241cab9e37da650b1155f51fa007726}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_aa24fe780201a3ffa1630fddf2140cd3a}{
+synchronized void {\bfseries removeDTListener} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{DTListener} listener)}
+\label{classj_bittorrent_a_p_i_1_1_download_task_aa24fe780201a3ffa1630fddf2140cd3a}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a4da7e4900dcd4e2cbf77692917505d5f}{
+synchronized \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{DTListener}\mbox{[}$\,$\mbox{]} {\bfseries getDTListeners} ()}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a4da7e4900dcd4e2cbf77692917505d5f}
+
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_task_a914822d063b324e3a1fc8361d9ed67fa}{end} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_abaf8029aaa0b7cbd04294dc1bfa35c75}{
+\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} {\bfseries peer}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_abaf8029aaa0b7cbd04294dc1bfa35c75}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a14e248880e79473017ae0809606af8d3}{
+byte\mbox{[}$\,$\mbox{]} {\bfseries bitfield} = null}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a14e248880e79473017ae0809606af8d3}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a2f868a347dd0423436e2da56704beb05}{
+\hyperlink{classj_bittorrent_a_p_i_1_1_message_sender}{MessageSender} {\bfseries ms} = null}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a2f868a347dd0423436e2da56704beb05}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a9da1472bdfa21a1b6590b34fc1e1cb71}{
+\hyperlink{classj_bittorrent_a_p_i_1_1_message_receiver}{MessageReceiver} {\bfseries mr} = null}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a9da1472bdfa21a1b6590b34fc1e1cb71}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a2732a378d5dbb099688413ac8087e810}{
+static final int {\bfseries TASK\_\-COMPLETED} = 0}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a2732a378d5dbb099688413ac8087e810}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a23c3dac856cd53a66657252a804ca1cb}{
+static final int {\bfseries UNKNOWN\_\-HOST} = 1}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a23c3dac856cd53a66657252a804ca1cb}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a9ebd1310d185a42794afda93fb90c08b}{
+static final int {\bfseries CONNECTION\_\-REFUSED} = 2}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a9ebd1310d185a42794afda93fb90c08b}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a16194b7e7645af68049fefee215a63e4}{
+static final int {\bfseries BAD\_\-HANDSHAKE} = 3}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a16194b7e7645af68049fefee215a63e4}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a8e25c3eb200e692136d921de8a96a3d7}{
+static final int {\bfseries MALFORMED\_\-MESSAGE} = 4}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a8e25c3eb200e692136d921de8a96a3d7}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_adb8766e486bc5c6d259035475ce241e5}{
+static final int {\bfseries TIMEOUT} = 5}
+\label{classj_bittorrent_a_p_i_1_1_download_task_adb8766e486bc5c6d259035475ce241e5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a5fe60e63cc20c1c546660d96d51550d9}{
+void {\bfseries finalize} ()  throws Throwable}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a5fe60e63cc20c1c546660d96d51550d9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a task that downloads pieces from a remote peer 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a9df91103ea2899e6d56ed0d4bbb91c50}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!DownloadTask@{DownloadTask}}
+\index{DownloadTask@{DownloadTask}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{DownloadTask}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.DownloadTask.DownloadTask ({\bf Peer} {\em peer}, \/  byte\mbox{[}$\,$\mbox{]} {\em fileID}, \/  byte\mbox{[}$\,$\mbox{]} {\em myID}, \/  boolean {\em init}, \/  byte\mbox{[}$\,$\mbox{]} {\em bitfield}, \/  Socket {\em s})}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a9df91103ea2899e6d56ed0d4bbb91c50}
+Start the downloading process from the remote peer in parameter 
+\begin{DoxyParams}{Parameters}
+\item[{\em peer}]The peer to connect to \item[{\em fileID}]The file to be downloaded \item[{\em myID}]The id of the current client \item[{\em init}]True if this client initiate the connection, false otherwise \item[{\em s}]Only set if this client receive a connection request from the remote peer \item[{\em bitfield}]The piece currently ownend by this client \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a32181ebfc1d30259b58847cd6ffb527b}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!DownloadTask@{DownloadTask}}
+\index{DownloadTask@{DownloadTask}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{DownloadTask}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.DownloadTask.DownloadTask ({\bf Peer} {\em peer}, \/  byte\mbox{[}$\,$\mbox{]} {\em fileID}, \/  byte\mbox{[}$\,$\mbox{]} {\em myID}, \/  boolean {\em init}, \/  byte\mbox{[}$\,$\mbox{]} {\em bitfield})}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a32181ebfc1d30259b58847cd6ffb527b}
+Start the downloading process from the remote peer in parameter 
+\begin{DoxyParams}{Parameters}
+\item[{\em peer}]The peer to connect to \item[{\em fileID}]The file to be downloaded \item[{\em myID}]The id of the current client \item[{\em init}]True if this client initiate the connection, false otherwise \item[{\em bitfield}]The pieces currently owned by this client \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_aa6305d83b8254e0768b5f4cb04d6c7c9}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!DownloadTask@{DownloadTask}}
+\index{DownloadTask@{DownloadTask}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{DownloadTask}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.DownloadTask.DownloadTask ({\bf Peer} {\em peer}, \/  byte\mbox{[}$\,$\mbox{]} {\em fileID}, \/  byte\mbox{[}$\,$\mbox{]} {\em myID})}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_aa6305d83b8254e0768b5f4cb04d6c7c9}
+Start the downloading process from the remote peer in parameter 
+\begin{DoxyParams}{Parameters}
+\item[{\em peer}]The peer to connect to \item[{\em fileID}]The file to be downloaded \item[{\em myID}]The id of the current client \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000002}{Deprecated}]\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a3449a9a800c67c5a039a50c8ea1757be}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!checkDownloaded@{checkDownloaded}}
+\index{checkDownloaded@{checkDownloaded}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{checkDownloaded}]{\setlength{\rightskip}{0pt plus 5cm}synchronized int jBittorrentAPI.DownloadTask.checkDownloaded ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a3449a9a800c67c5a039a50c8ea1757be}
+Returns the total amount of bytes downloaded by this task so far \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_aee45e53d98af60717f41840bc5e44c73}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!connectionClosed@{connectionClosed}}
+\index{connectionClosed@{connectionClosed}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{connectionClosed}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadTask.connectionClosed ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_aee45e53d98af60717f41840bc5e44c73}
+Fired when the connection to the remote peer has been closed. This method clear this task data and send a message to the \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager}{DownloadManager}, informing it that this peer connection has been closed, resulting in the deletion of this task 
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_outgoing_listener_aede38edb5347290c7c7a234de14f208e}{jBittorrentAPI.OutgoingListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a914822d063b324e3a1fc8361d9ed67fa}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!end@{end}}
+\index{end@{end}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadTask.end ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a914822d063b324e3a1fc8361d9ed67fa}
+Stops this thread by setting the 'run' variable to false and closing the communication thread (\hyperlink{classj_bittorrent_a_p_i_1_1_message}{Message} receiver and sender). Closes the connection to the remote peer \hypertarget{classj_bittorrent_a_p_i_1_1_download_task_acc97629e68b6c2cc0cdcf860907f4e09}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!getPeer@{getPeer}}
+\index{getPeer@{getPeer}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{getPeer}]{\setlength{\rightskip}{0pt plus 5cm}synchronized {\bf Peer} jBittorrentAPI.DownloadTask.getPeer ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_acc97629e68b6c2cc0cdcf860907f4e09}
+Returns this peer object \begin{DoxyReturn}{Returns}
+\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a0e6aae72189862d442f35a9a0d9953ff}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!initConnection@{initConnection}}
+\index{initConnection@{initConnection}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{initConnection}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadTask.initConnection ()  throws UnknownHostException, IOException }}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a0e6aae72189862d442f35a9a0d9953ff}
+Inits the connection to the remote peer. Also init the message sender and receiver. If necessary, starts the handshake with the peer 
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em UnknownHostException}]If the remote peer is unknown \item[{\em IOException}]If the connection to the remote peer fails (reset, ...) \end{DoxyExceptions}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_aaa3fad9c3cd6b12c46e76d291313060f}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!keepAliveSent@{keepAliveSent}}
+\index{keepAliveSent@{keepAliveSent}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{keepAliveSent}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadTask.keepAliveSent ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_aaa3fad9c3cd6b12c46e76d291313060f}
+Fired when a keep-\/alive message has been sent by the \hyperlink{classj_bittorrent_a_p_i_1_1_message_sender}{MessageSender}. If at the time the keep-\/alive was sent, this peer has not received any message from the remote peer since more that 3 minutes, the remote peer is considered as dead, and we close the connection, then inform the \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager}{DownloadManager} that this connection timed out...
+
+Otherwise, inform the \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager}{DownloadManager} that this task is still alive and has not been used for a long time... 
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_outgoing_listener_a21390243ebe1a22870106a42fa4f6d04}{jBittorrentAPI.OutgoingListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a3234c0677a09c13fdd7926e894db570d}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!messageReceived@{messageReceived}}
+\index{messageReceived@{messageReceived}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{messageReceived}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadTask.messageReceived ({\bf Message} {\em m})}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a3234c0677a09c13fdd7926e894db570d}
+According to the message type, change the state of the task (peer) and take the necessary actions 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]\hyperlink{classj_bittorrent_a_p_i_1_1_message}{Message} \end{DoxyParams}
+
+
+Sets the block of data downloaded in the piece block list and update the peer download rate. Removes the piece block from the pending request list and change state.
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_incoming_listener_a64813a5432e5379c8841f21f89c395a6}{jBittorrentAPI.IncomingListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_abe8ce5e30e5cf362a889c239685b7885}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!requestPiece@{requestPiece}}
+\index{requestPiece@{requestPiece}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{requestPiece}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadTask.requestPiece ({\bf Piece} {\em p})}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_abe8ce5e30e5cf362a889c239685b7885}
+Request a peer to the peer 
+\begin{DoxyParams}{Parameters}
+\item[{\em p}]The piece to be requested to the peer \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_task_a083abaff7ffe593b7994d079e5b5cbe8}{
+\index{jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}!run@{run}}
+\index{run@{run}!jBittorrentAPI::DownloadTask@{jBittorrentAPI::DownloadTask}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadTask.run ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_task_a083abaff7ffe593b7994d079e5b5cbe8}
+
+
+Wait for the task to end, i.e. the peer to return to IDLE state
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/DownloadTask.java\end{DoxyCompactItemize}

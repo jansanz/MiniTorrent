@@ -1,0 +1,285 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor}{
+\section{jBittorrentAPI.TorrentProcessor Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor}\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+}
+Collaboration diagram for jBittorrentAPI.TorrentProcessor:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_af6d631ae929512d9a4ff44b4bec635ae}{
+{\bfseries TorrentProcessor} (\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} torrent)}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_af6d631ae929512d9a4ff44b4bec635ae}
+
+\item 
+Map \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a2597c7f2d6bd3a1ff44561930edb1afe}{parseTorrent} (String filename)
+\item 
+Map \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a3145149480112de51c58ba46ff75c297}{parseTorrent} (File file)
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_aba7d3c3578e5dc678fd988982871d7c7}{getTorrentFile} (Map m)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_ab593b497792415fd4b8d9221c6d7f391}{setTorrent} (\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} torr)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a4970e6a3aab640e0ac47cd6d65e749ee}{setTorrentData} (String url, int pLength, String comment, String encoding, String filename)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_ae7e8114cb0d891424812ceac8fe62aad}{setTorrentData} (String url, int pLength, String comment, String encoding, String name, List filenames)  throws Exception 
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_ae82dee4118c2689233ae179bad8b059f}{setAnnounceURL} (String url)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a93c918d9dae163839b5a5c55af3db345}{setPieceLength} (int length)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a4ab8920ed8edfa98737326904433ecc6}{setName} (String name)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a4edbf4d4b0b02b69f8f98e7e548a7cd9}{setComment} (String comment)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a7529a38cb49a64af62aeb78d84173db4}{setCreator} (String creator)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a0af2c41df6d24d10b36ef131f2ddf6ba}{setCreationDate} (long date)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a8a1107ff400760964bed5143255aa006}{setEncoding} (String encoding)
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a43ee5328989242c3b453154788cee1ec}{addFiles} (List l)  throws Exception 
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a87892ae75b24a6316a37093bd3a77123}{addFile} (File file)
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a6ca859a5a72f7f16c32db57905fdc5df}{addFile} (String filename)
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_af298f29e3f28860a023c85e0b18e2470}{addFiles} (Object\mbox{[}$\,$\mbox{]} filenames)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a86fd402a8e9b6a1dbc4c26645dd42d8b}{generatePieceHashes} (\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} torr)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a7c547dbac2b9cf1afd785558c2d7c89b}{generatePieceHashes} ()
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_aa77ab40de555dd36070fa2d5a332db21}{generateTorrent} (\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} torr)
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a8ac41276f857bafc5e0facbe615a3332}{generateTorrent} ()
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_processor_a2d163f91f70948c6bdd0970e3d124bf2}{getTorrent} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class enabling to process a torrent file \begin{DoxyAuthor}{Author}
+Baptiste Dubuis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a6ca859a5a72f7f16c32db57905fdc5df}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!addFile@{addFile}}
+\index{addFile@{addFile}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{addFile}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.TorrentProcessor.addFile (String {\em filename})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a6ca859a5a72f7f16c32db57905fdc5df}
+Add the files in the list to the torrent 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]The path of the file to be added \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of file that have been added 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em Exception}]\end{DoxyExceptions}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a87892ae75b24a6316a37093bd3a77123}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!addFile@{addFile}}
+\index{addFile@{addFile}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{addFile}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.TorrentProcessor.addFile (File {\em file})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a87892ae75b24a6316a37093bd3a77123}
+Add the files in the list to the torrent 
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]The file to be added \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of file that have been added 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em Exception}]\end{DoxyExceptions}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_af298f29e3f28860a023c85e0b18e2470}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!addFiles@{addFiles}}
+\index{addFiles@{addFiles}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{addFiles}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.TorrentProcessor.addFiles (Object\mbox{[}$\,$\mbox{]} {\em filenames})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_af298f29e3f28860a023c85e0b18e2470}
+Add the files in the list to the torrent 
+\begin{DoxyParams}{Parameters}
+\item[{\em filenames}]An array containing the files to be added \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of files that have been added 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em Exception}]\end{DoxyExceptions}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a43ee5328989242c3b453154788cee1ec}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!addFiles@{addFiles}}
+\index{addFiles@{addFiles}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{addFiles}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.TorrentProcessor.addFiles (List {\em l})  throws Exception }}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a43ee5328989242c3b453154788cee1ec}
+Add the files in the list to the torrent 
+\begin{DoxyParams}{Parameters}
+\item[{\em l}]A list containing the File or String object representing the files to be added \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of files that have been added 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em Exception}]\end{DoxyExceptions}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a7c547dbac2b9cf1afd785558c2d7c89b}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!generatePieceHashes@{generatePieceHashes}}
+\index{generatePieceHashes@{generatePieceHashes}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{generatePieceHashes}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.generatePieceHashes ()}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a7c547dbac2b9cf1afd785558c2d7c89b}
+Generate the SHA-\/1 hashes for the files in the current object \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a86fd402a8e9b6a1dbc4c26645dd42d8b}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!generatePieceHashes@{generatePieceHashes}}
+\index{generatePieceHashes@{generatePieceHashes}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{generatePieceHashes}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.generatePieceHashes ({\bf TorrentFile} {\em torr})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a86fd402a8e9b6a1dbc4c26645dd42d8b}
+Generate the SHA-\/1 hashes for the file in the torrent in parameter 
+\begin{DoxyParams}{Parameters}
+\item[{\em torr}]\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a8ac41276f857bafc5e0facbe615a3332}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!generateTorrent@{generateTorrent}}
+\index{generateTorrent@{generateTorrent}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{generateTorrent}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.TorrentProcessor.generateTorrent ()}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a8ac41276f857bafc5e0facbe615a3332}
+Generate the bytes for the current object \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_aa77ab40de555dd36070fa2d5a332db21}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!generateTorrent@{generateTorrent}}
+\index{generateTorrent@{generateTorrent}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{generateTorrent}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.TorrentProcessor.generateTorrent ({\bf TorrentFile} {\em torr})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_aa77ab40de555dd36070fa2d5a332db21}
+Generate the bytes of the bencoded \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} data 
+\begin{DoxyParams}{Parameters}
+\item[{\em torr}]\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a2d163f91f70948c6bdd0970e3d124bf2}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!getTorrent@{getTorrent}}
+\index{getTorrent@{getTorrent}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{getTorrent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TorrentFile} jBittorrentAPI.TorrentProcessor.getTorrent ()}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a2d163f91f70948c6bdd0970e3d124bf2}
+Returns the local \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} in its current state \begin{DoxyReturn}{Returns}
+\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_aba7d3c3578e5dc678fd988982871d7c7}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!getTorrentFile@{getTorrentFile}}
+\index{getTorrentFile@{getTorrentFile}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{getTorrentFile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TorrentFile} jBittorrentAPI.TorrentProcessor.getTorrentFile (Map {\em m})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_aba7d3c3578e5dc678fd988982871d7c7}
+Given a Map, retrieve all useful information and represent it as a \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} object 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]Map \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a3145149480112de51c58ba46ff75c297}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!parseTorrent@{parseTorrent}}
+\index{parseTorrent@{parseTorrent}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{parseTorrent}]{\setlength{\rightskip}{0pt plus 5cm}Map jBittorrentAPI.TorrentProcessor.parseTorrent (File {\em file})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a3145149480112de51c58ba46ff75c297}
+Given a File (supposed to be a torrent), parse it and represent it as a Map 
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]File \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a2597c7f2d6bd3a1ff44561930edb1afe}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!parseTorrent@{parseTorrent}}
+\index{parseTorrent@{parseTorrent}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{parseTorrent}]{\setlength{\rightskip}{0pt plus 5cm}Map jBittorrentAPI.TorrentProcessor.parseTorrent (String {\em filename})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a2597c7f2d6bd3a1ff44561930edb1afe}
+Given the path of a torrent, parse the file and represent it as a Map 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]String \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_ae82dee4118c2689233ae179bad8b059f}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setAnnounceURL@{setAnnounceURL}}
+\index{setAnnounceURL@{setAnnounceURL}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setAnnounceURL}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setAnnounceURL (String {\em url})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_ae82dee4118c2689233ae179bad8b059f}
+Sets the announce url of the torrent 
+\begin{DoxyParams}{Parameters}
+\item[{\em url}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a4edbf4d4b0b02b69f8f98e7e548a7cd9}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setComment@{setComment}}
+\index{setComment@{setComment}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setComment}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setComment (String {\em comment})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a4edbf4d4b0b02b69f8f98e7e548a7cd9}
+Sets the comment about this torrent 
+\begin{DoxyParams}{Parameters}
+\item[{\em comment}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a0af2c41df6d24d10b36ef131f2ddf6ba}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setCreationDate@{setCreationDate}}
+\index{setCreationDate@{setCreationDate}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setCreationDate}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setCreationDate (long {\em date})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a0af2c41df6d24d10b36ef131f2ddf6ba}
+Sets the time the torrent was created 
+\begin{DoxyParams}{Parameters}
+\item[{\em date}]long \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a7529a38cb49a64af62aeb78d84173db4}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setCreator@{setCreator}}
+\index{setCreator@{setCreator}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setCreator}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setCreator (String {\em creator})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a7529a38cb49a64af62aeb78d84173db4}
+Sets the creator of the torrent. This should be the client name and version 
+\begin{DoxyParams}{Parameters}
+\item[{\em creator}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a8a1107ff400760964bed5143255aa006}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setEncoding@{setEncoding}}
+\index{setEncoding@{setEncoding}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setEncoding}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setEncoding (String {\em encoding})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a8a1107ff400760964bed5143255aa006}
+Sets the encoding of the torrent 
+\begin{DoxyParams}{Parameters}
+\item[{\em encoding}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a4ab8920ed8edfa98737326904433ecc6}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setName@{setName}}
+\index{setName@{setName}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setName}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setName (String {\em name})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a4ab8920ed8edfa98737326904433ecc6}
+Sets the directory the files have to be saved in (in case of multiple files torrent) 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a93c918d9dae163839b5a5c55af3db345}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setPieceLength@{setPieceLength}}
+\index{setPieceLength@{setPieceLength}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setPieceLength}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setPieceLength (int {\em length})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a93c918d9dae163839b5a5c55af3db345}
+Sets the pieceLength 
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_ab593b497792415fd4b8d9221c6d7f391}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setTorrent@{setTorrent}}
+\index{setTorrent@{setTorrent}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setTorrent}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setTorrent ({\bf TorrentFile} {\em torr})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_ab593b497792415fd4b8d9221c6d7f391}
+Sets the \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} object of the Publisher equals to the given one 
+\begin{DoxyParams}{Parameters}
+\item[{\em torr}]\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_ae7e8114cb0d891424812ceac8fe62aad}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setTorrentData@{setTorrentData}}
+\index{setTorrentData@{setTorrentData}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setTorrentData}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setTorrentData (String {\em url}, \/  int {\em pLength}, \/  String {\em comment}, \/  String {\em encoding}, \/  String {\em name}, \/  List {\em filenames})  throws Exception }}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_ae7e8114cb0d891424812ceac8fe62aad}
+Updates the \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} object according to the given parameters 
+\begin{DoxyParams}{Parameters}
+\item[{\em url}]The announce url \item[{\em pLength}]The length of the pieces of the torrent \item[{\em comment}]The comments for the torrent \item[{\em encoding}]The encoding of the torrent \item[{\em name}]The name of the directory to save the files in \item[{\em filenames}]The path of the file to be added to the torrent \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em java.lang.Exception}]\end{DoxyExceptions}
+\hypertarget{classj_bittorrent_a_p_i_1_1_torrent_processor_a4970e6a3aab640e0ac47cd6d65e749ee}{
+\index{jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}!setTorrentData@{setTorrentData}}
+\index{setTorrentData@{setTorrentData}!jBittorrentAPI::TorrentProcessor@{jBittorrentAPI::TorrentProcessor}}
+\subsubsection[{setTorrentData}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.TorrentProcessor.setTorrentData (String {\em url}, \/  int {\em pLength}, \/  String {\em comment}, \/  String {\em encoding}, \/  String {\em filename})}}
+\label{classj_bittorrent_a_p_i_1_1_torrent_processor_a4970e6a3aab640e0ac47cd6d65e749ee}
+Updates the \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} object according to the given parameters 
+\begin{DoxyParams}{Parameters}
+\item[{\em url}]The announce url \item[{\em pLength}]The length of the pieces of the torrent \item[{\em comment}]The comments for the torrent \item[{\em encoding}]The encoding of the torrent \item[{\em filename}]The path of the file to be added to the torrent \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/TorrentProcessor.java\end{DoxyCompactItemize}

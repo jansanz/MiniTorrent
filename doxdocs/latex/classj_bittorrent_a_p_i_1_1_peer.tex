@@ -1,0 +1,302 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer}{
+\section{jBittorrentAPI.Peer Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_peer}\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+}
+Collaboration diagram for jBittorrentAPI.Peer:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_ae977124ca29476d3c58e99c62bb9759e}{
+{\bfseries Peer} (String id, String ip, int port)}
+\label{classj_bittorrent_a_p_i_1_1_peer_ae977124ca29476d3c58e99c62bb9759e}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_ac753065b7a9cecc5ca4332819b6b88f5}{
+void {\bfseries resetDL} ()}
+\label{classj_bittorrent_a_p_i_1_1_peer_ac753065b7a9cecc5ca4332819b6b88f5}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_aa56dc3f3b5681c045c4c8473687177e0}{
+void {\bfseries resetUL} ()}
+\label{classj_bittorrent_a_p_i_1_1_peer_aa56dc3f3b5681c045c4c8473687177e0}
+
+\item 
+float \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a79fe669ebeaec347570b4f9acbcc73e9}{getDLRate} (boolean reset)
+\item 
+float \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a3a73a98b5bed923f31a60ea06bec9d58}{getULRate} (boolean reset)
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a4a3d9c05c162843efcf946b7b751d217}{getDL} ()
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a7e728ed4c9f505509669eec249ff4728}{getUL} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_ab7e729e31a066939ffe067dbe6f5c7f0}{setDLRate} (int dl)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_af0348eb2b8fb4cffa99f96777ea8d7cb}{setULRate} (int ul)
+\item 
+String \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a3c000bc04c36f38849de8f24c1c1ca4b}{getID} ()
+\item 
+String \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a45433671f97727829f59f7f215fd04ec}{getIP} ()
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a8d9e796f58c6c0083ff7336986af72f6}{getPort} ()
+\item 
+BitSet \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a8161bb02d7e8a626606fc1f48720167e}{getHasPiece} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a3c44feb22505911dd1d168386c230918}{setID} (String id)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a765f94ac876c1de0d22ec44cbadaa5ef}{setIP} (String ip)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_ac15e5b181addfb991805605b9549859f}{setPort} (int port)
+\item 
+boolean \hyperlink{classj_bittorrent_a_p_i_1_1_peer_af294901b95599c05a7b11697e1881252}{isInterested} ()
+\item 
+boolean \hyperlink{classj_bittorrent_a_p_i_1_1_peer_aed29d428f718b3547a91a1fc5008d1df}{isChoked} ()
+\item 
+boolean \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a1f8c763eaf3f5b037a90fd71cb2db123}{isInteresting} ()
+\item 
+boolean \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a14f019b3986a9b45c8f9464118ff994d}{isChoking} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_aff5f908b9c7a9d252310619bb47d9148}{setInterested} (boolean i)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_abaafe98ab9364cd5f97bf44845ffe547}{setChoked} (boolean c)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_afd6499773360e27d3c87c3a392014c46}{setInteresting} (boolean i)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a80ca94e6613a57e26cb8d492f527b655}{setChoking} (boolean c)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_aa21bc505e928ff01a08472e68c2de02d}{setHasPiece} (byte\mbox{[}$\,$\mbox{]} bitfield)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_ab3aed195d88ad4569f531bd64491b000}{setHasPiece} (int piece, boolean has)
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a1b1abd159ae2a0f01c68ed3841f95bc2}{
+boolean {\bfseries isConnected} ()}
+\label{classj_bittorrent_a_p_i_1_1_peer_a1b1abd159ae2a0f01c68ed3841f95bc2}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a4ca2de5db57174693e6685f883fa2c94}{
+void {\bfseries setConnected} (boolean connectionStatus)}
+\label{classj_bittorrent_a_p_i_1_1_peer_a4ca2de5db57174693e6685f883fa2c94}
+
+\item 
+boolean \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a4c9f6cb8896bbb0874a53943fe56d74f}{equals} (\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} p)
+\item 
+String \hyperlink{classj_bittorrent_a_p_i_1_1_peer_a29261679f8b9d63f464a2a9c916a6982}{toString} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a bittorrent peer 
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a4c9f6cb8896bbb0874a53943fe56d74f}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!equals@{equals}}
+\index{equals@{equals}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean jBittorrentAPI.Peer.equals ({\bf Peer} {\em p})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a4c9f6cb8896bbb0874a53943fe56d74f}
+Compares if this peer is equal to the peer in parameter 
+\begin{DoxyParams}{Parameters}
+\item[{\em p}]\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a4a3d9c05c162843efcf946b7b751d217}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!getDL@{getDL}}
+\index{getDL@{getDL}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{getDL}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.Peer.getDL ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a4a3d9c05c162843efcf946b7b751d217}
+Returns the total number of bytes downloaded from this peer \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a79fe669ebeaec347570b4f9acbcc73e9}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!getDLRate@{getDLRate}}
+\index{getDLRate@{getDLRate}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{getDLRate}]{\setlength{\rightskip}{0pt plus 5cm}float jBittorrentAPI.Peer.getDLRate (boolean {\em reset})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a79fe669ebeaec347570b4f9acbcc73e9}
+Returns the number of bytes downloaded since the last reset 
+\begin{DoxyParams}{Parameters}
+\item[{\em reset}]true if the download rate should be reset \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a8161bb02d7e8a626606fc1f48720167e}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!getHasPiece@{getHasPiece}}
+\index{getHasPiece@{getHasPiece}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{getHasPiece}]{\setlength{\rightskip}{0pt plus 5cm}BitSet jBittorrentAPI.Peer.getHasPiece ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a8161bb02d7e8a626606fc1f48720167e}
+Returns the pieces availability of this peer \begin{DoxyReturn}{Returns}
+BitSet 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a3c000bc04c36f38849de8f24c1c1ca4b}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!getID@{getID}}
+\index{getID@{getID}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{getID}]{\setlength{\rightskip}{0pt plus 5cm}String jBittorrentAPI.Peer.getID ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a3c000bc04c36f38849de8f24c1c1ca4b}
+Returns the id of this peer \begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a45433671f97727829f59f7f215fd04ec}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!getIP@{getIP}}
+\index{getIP@{getIP}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{getIP}]{\setlength{\rightskip}{0pt plus 5cm}String jBittorrentAPI.Peer.getIP ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a45433671f97727829f59f7f215fd04ec}
+Returns the IP address of this peer \begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a8d9e796f58c6c0083ff7336986af72f6}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!getPort@{getPort}}
+\index{getPort@{getPort}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{getPort}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.Peer.getPort ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a8d9e796f58c6c0083ff7336986af72f6}
+Returns the listening port of this peer \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a7e728ed4c9f505509669eec249ff4728}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!getUL@{getUL}}
+\index{getUL@{getUL}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{getUL}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.Peer.getUL ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a7e728ed4c9f505509669eec249ff4728}
+Returns the total number of bytes uploaded to this peer \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a3a73a98b5bed923f31a60ea06bec9d58}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!getULRate@{getULRate}}
+\index{getULRate@{getULRate}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{getULRate}]{\setlength{\rightskip}{0pt plus 5cm}float jBittorrentAPI.Peer.getULRate (boolean {\em reset})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a3a73a98b5bed923f31a60ea06bec9d58}
+Returns the number of bytes uploaded since the last reset. 
+\begin{DoxyParams}{Parameters}
+\item[{\em reset}]true if the download rate should be reset \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_aed29d428f718b3547a91a1fc5008d1df}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!isChoked@{isChoked}}
+\index{isChoked@{isChoked}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{isChoked}]{\setlength{\rightskip}{0pt plus 5cm}boolean jBittorrentAPI.Peer.isChoked ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_aed29d428f718b3547a91a1fc5008d1df}
+Returns if this peer is choked or not \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a14f019b3986a9b45c8f9464118ff994d}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!isChoking@{isChoking}}
+\index{isChoking@{isChoking}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{isChoking}]{\setlength{\rightskip}{0pt plus 5cm}boolean jBittorrentAPI.Peer.isChoking ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a14f019b3986a9b45c8f9464118ff994d}
+Returns if this peer is choking or not \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_af294901b95599c05a7b11697e1881252}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!isInterested@{isInterested}}
+\index{isInterested@{isInterested}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{isInterested}]{\setlength{\rightskip}{0pt plus 5cm}boolean jBittorrentAPI.Peer.isInterested ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_af294901b95599c05a7b11697e1881252}
+Returns if this peer is interested or not \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a1f8c763eaf3f5b037a90fd71cb2db123}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!isInteresting@{isInteresting}}
+\index{isInteresting@{isInteresting}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{isInteresting}]{\setlength{\rightskip}{0pt plus 5cm}boolean jBittorrentAPI.Peer.isInteresting ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a1f8c763eaf3f5b037a90fd71cb2db123}
+Returns if this peer is interesting or not \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_abaafe98ab9364cd5f97bf44845ffe547}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setChoked@{setChoked}}
+\index{setChoked@{setChoked}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setChoked}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setChoked (boolean {\em c})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_abaafe98ab9364cd5f97bf44845ffe547}
+Sets if this peer is choked or not 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]boolean \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a80ca94e6613a57e26cb8d492f527b655}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setChoking@{setChoking}}
+\index{setChoking@{setChoking}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setChoking}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setChoking (boolean {\em c})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a80ca94e6613a57e26cb8d492f527b655}
+Sets if this peer is choking or not 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]boolean \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_ab7e729e31a066939ffe067dbe6f5c7f0}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setDLRate@{setDLRate}}
+\index{setDLRate@{setDLRate}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setDLRate}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setDLRate (int {\em dl})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_ab7e729e31a066939ffe067dbe6f5c7f0}
+Updates the downloaded values 
+\begin{DoxyParams}{Parameters}
+\item[{\em dl}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_ab3aed195d88ad4569f531bd64491b000}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setHasPiece@{setHasPiece}}
+\index{setHasPiece@{setHasPiece}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setHasPiece}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setHasPiece (int {\em piece}, \/  boolean {\em has})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_ab3aed195d88ad4569f531bd64491b000}
+Updates the availability of the piece in parameter 
+\begin{DoxyParams}{Parameters}
+\item[{\em piece}]int \item[{\em has}]boolean \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_aa21bc505e928ff01a08472e68c2de02d}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setHasPiece@{setHasPiece}}
+\index{setHasPiece@{setHasPiece}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setHasPiece}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setHasPiece (byte\mbox{[}$\,$\mbox{]} {\em bitfield})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_aa21bc505e928ff01a08472e68c2de02d}
+Updates this peer availability according to the received bitfield 
+\begin{DoxyParams}{Parameters}
+\item[{\em bitfield}]byte\mbox{[}\mbox{]} \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a3c44feb22505911dd1d168386c230918}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setID@{setID}}
+\index{setID@{setID}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setID}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setID (String {\em id})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a3c44feb22505911dd1d168386c230918}
+Sets the id of this peer 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_aff5f908b9c7a9d252310619bb47d9148}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setInterested@{setInterested}}
+\index{setInterested@{setInterested}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setInterested}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setInterested (boolean {\em i})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_aff5f908b9c7a9d252310619bb47d9148}
+Sets if this peer is intereseted or not 
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]boolean \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_afd6499773360e27d3c87c3a392014c46}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setInteresting@{setInteresting}}
+\index{setInteresting@{setInteresting}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setInteresting}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setInteresting (boolean {\em i})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_afd6499773360e27d3c87c3a392014c46}
+Sets if this peer is interesting or not 
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]boolean \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a765f94ac876c1de0d22ec44cbadaa5ef}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setIP@{setIP}}
+\index{setIP@{setIP}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setIP}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setIP (String {\em ip})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a765f94ac876c1de0d22ec44cbadaa5ef}
+Sets the IP address of this peer 
+\begin{DoxyParams}{Parameters}
+\item[{\em ip}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_ac15e5b181addfb991805605b9549859f}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setPort@{setPort}}
+\index{setPort@{setPort}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setPort}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setPort (int {\em port})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_ac15e5b181addfb991805605b9549859f}
+Sets the listening port of this peer 
+\begin{DoxyParams}{Parameters}
+\item[{\em port}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_af0348eb2b8fb4cffa99f96777ea8d7cb}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!setULRate@{setULRate}}
+\index{setULRate@{setULRate}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{setULRate}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Peer.setULRate (int {\em ul})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_af0348eb2b8fb4cffa99f96777ea8d7cb}
+Updates the uploaded values 
+\begin{DoxyParams}{Parameters}
+\item[{\em ul}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_a29261679f8b9d63f464a2a9c916a6982}{
+\index{jBittorrentAPI::Peer@{jBittorrentAPI::Peer}!toString@{toString}}
+\index{toString@{toString}!jBittorrentAPI::Peer@{jBittorrentAPI::Peer}}
+\subsubsection[{toString}]{\setlength{\rightskip}{0pt plus 5cm}String jBittorrentAPI.Peer.toString ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_a29261679f8b9d63f464a2a9c916a6982}
+Returns this peer characteristics in the form $<$ip address$>$=\char`\"{}\char`\"{}$>$:$<$port$>$ \begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/Peer.java\end{DoxyCompactItemize}

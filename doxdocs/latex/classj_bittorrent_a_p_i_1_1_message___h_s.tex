@@ -1,0 +1,149 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s}{
+\section{jBittorrentAPI.Message\_\-HS Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s}\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}}
+}
+
+
+Inherits \hyperlink{classj_bittorrent_a_p_i_1_1_message}{jBittorrentAPI::Message}.Collaboration diagram for jBittorrentAPI.Message\_\-HS:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a1c67b8552e5e64459a83d5947b69bd34}{Message\_\-HS} ()
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a25dc27ff305744055c516dd90835c2c7}{Message\_\-HS} (byte\mbox{[}$\,$\mbox{]} infoHash, byte\mbox{[}$\,$\mbox{]} peerID)
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a720a309bdaf8566f98a351f7e8d98c05}{Message\_\-HS} (byte\mbox{[}$\,$\mbox{]} length, byte\mbox{[}$\,$\mbox{]} protocol, byte\mbox{[}$\,$\mbox{]} reserved, byte\mbox{[}$\,$\mbox{]} fileID, byte\mbox{[}$\,$\mbox{]} peerID)
+\item 
+byte \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a847d44cfb0f8c03c4ed3b81a41cff240}{getLength} ()
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a16053a0dcd33bc941bb0e6c173ccea79}{getProtocol} ()
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_acd526d44eed4c9a99e428024e7648890}{getReserved} ()
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a3c6ed7fb69274f946919bef1ce8f0968}{getFileID} ()
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a59ac855807e9c0821d5633b58aa88d05}{getPeerID} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a97ccea86b2ccb3f20badf4ea3952d247}{setData} (byte\mbox{[}$\,$\mbox{]} length, byte\mbox{[}$\,$\mbox{]} protocol, byte\mbox{[}$\,$\mbox{]} reserved, byte\mbox{[}$\,$\mbox{]} fileID, byte\mbox{[}$\,$\mbox{]} peerID)
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_a65f7878db0225ce3f390a63aa2548673}{generate} ()
+\item 
+String \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s_ae98c9d701d858087fd3b75df247b1ca9}{toString} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent a Handshake message according to Bittorrent Protocol. It has the form: $<$pstrlen$>$$<$pstr$>$$<$reserved$>$$<$info\_\-hash$>$$<$peer\_\-id$>$
+
+
+\begin{DoxyItemize}
+\item \# pstrlen: string length of $<$pstr$>$, as a single raw byte -\/
+\item \# pstr: string identifier of the protocol -\/
+\item \# reserved: eight (8) reserved bytes -\/
+\item \# info\_\-hash: 20-\/byte SHA1 hash of the info key in the metainfo file -\/
+\item \# peer\_\-id: 20-\/byte string used as a unique ID for the client -\/
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Baptiste Dubuis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a1c67b8552e5e64459a83d5947b69bd34}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!Message\_\-HS@{Message\_\-HS}}
+\index{Message\_\-HS@{Message\_\-HS}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{Message\_\-HS}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.Message\_\-HS.Message\_\-HS ()}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a1c67b8552e5e64459a83d5947b69bd34}
+Creates an empty HS message \hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a25dc27ff305744055c516dd90835c2c7}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!Message\_\-HS@{Message\_\-HS}}
+\index{Message\_\-HS@{Message\_\-HS}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{Message\_\-HS}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.Message\_\-HS.Message\_\-HS (byte\mbox{[}$\,$\mbox{]} {\em infoHash}, \/  byte\mbox{[}$\,$\mbox{]} {\em peerID})}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a25dc27ff305744055c516dd90835c2c7}
+Creates a HS message with the given infoHash and peerID and default values 
+\begin{DoxyParams}{Parameters}
+\item[{\em infoHash}]byte\mbox{[}\mbox{]} \item[{\em peerID}]byte\mbox{[}\mbox{]} \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a720a309bdaf8566f98a351f7e8d98c05}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!Message\_\-HS@{Message\_\-HS}}
+\index{Message\_\-HS@{Message\_\-HS}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{Message\_\-HS}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.Message\_\-HS.Message\_\-HS (byte\mbox{[}$\,$\mbox{]} {\em length}, \/  byte\mbox{[}$\,$\mbox{]} {\em protocol}, \/  byte\mbox{[}$\,$\mbox{]} {\em reserved}, \/  byte\mbox{[}$\,$\mbox{]} {\em fileID}, \/  byte\mbox{[}$\,$\mbox{]} {\em peerID})}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a720a309bdaf8566f98a351f7e8d98c05}
+Create a HS message with all given parameters 
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]byte\mbox{[}\mbox{]} \item[{\em protocol}]byte\mbox{[}\mbox{]} \item[{\em reserved}]byte\mbox{[}\mbox{]} \item[{\em fileID}]byte\mbox{[}\mbox{]} \item[{\em peerID}]byte\mbox{[}\mbox{]} \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a65f7878db0225ce3f390a63aa2548673}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!generate@{generate}}
+\index{generate@{generate}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.Message\_\-HS.generate ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a65f7878db0225ce3f390a63aa2548673}
+Generate the byte array representing the whole message that can then be transmitted \begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classj_bittorrent_a_p_i_1_1_message}{jBittorrentAPI.Message}.\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a3c6ed7fb69274f946919bef1ce8f0968}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!getFileID@{getFileID}}
+\index{getFileID@{getFileID}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{getFileID}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.Message\_\-HS.getFileID ()}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a3c6ed7fb69274f946919bef1ce8f0968}
+Return the infoHash as a byte array \begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a847d44cfb0f8c03c4ed3b81a41cff240}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!getLength@{getLength}}
+\index{getLength@{getLength}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{getLength}]{\setlength{\rightskip}{0pt plus 5cm}byte jBittorrentAPI.Message\_\-HS.getLength ()}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a847d44cfb0f8c03c4ed3b81a41cff240}
+Return the length of the protocol string as a byte \begin{DoxyReturn}{Returns}
+byte 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a59ac855807e9c0821d5633b58aa88d05}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!getPeerID@{getPeerID}}
+\index{getPeerID@{getPeerID}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{getPeerID}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.Message\_\-HS.getPeerID ()}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a59ac855807e9c0821d5633b58aa88d05}
+Return the peerID as a byte array \begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a16053a0dcd33bc941bb0e6c173ccea79}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!getProtocol@{getProtocol}}
+\index{getProtocol@{getProtocol}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{getProtocol}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.Message\_\-HS.getProtocol ()}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a16053a0dcd33bc941bb0e6c173ccea79}
+Return the protocol string as a byte array \begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_acd526d44eed4c9a99e428024e7648890}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!getReserved@{getReserved}}
+\index{getReserved@{getReserved}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{getReserved}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.Message\_\-HS.getReserved ()}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_acd526d44eed4c9a99e428024e7648890}
+Return the reserved bytes as a byte array \begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_a97ccea86b2ccb3f20badf4ea3952d247}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!setData@{setData}}
+\index{setData@{setData}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{setData}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.Message\_\-HS.setData (byte\mbox{[}$\,$\mbox{]} {\em length}, \/  byte\mbox{[}$\,$\mbox{]} {\em protocol}, \/  byte\mbox{[}$\,$\mbox{]} {\em reserved}, \/  byte\mbox{[}$\,$\mbox{]} {\em fileID}, \/  byte\mbox{[}$\,$\mbox{]} {\em peerID})}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_a97ccea86b2ccb3f20badf4ea3952d247}
+Set the values of the fields according to the parameters 
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]byte\mbox{[}\mbox{]} \item[{\em protocol}]byte\mbox{[}\mbox{]} \item[{\em reserved}]byte\mbox{[}\mbox{]} \item[{\em fileID}]byte\mbox{[}\mbox{]} \item[{\em peerID}]byte\mbox{[}\mbox{]} \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message___h_s_ae98c9d701d858087fd3b75df247b1ca9}{
+\index{jBittorrentAPI::Message\_\-HS@{jBittorrentAPI::Message\_\-HS}!toString@{toString}}
+\index{toString@{toString}!jBittorrentAPI::Message_HS@{jBittorrentAPI::Message\_\-HS}}
+\subsubsection[{toString}]{\setlength{\rightskip}{0pt plus 5cm}String jBittorrentAPI.Message\_\-HS.toString ()}}
+\label{classj_bittorrent_a_p_i_1_1_message___h_s_ae98c9d701d858087fd3b75df247b1ca9}
+Display the message in a readable format \begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/Message\_\-HS.java\end{DoxyCompactItemize}

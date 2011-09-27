@@ -1,0 +1,71 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_receiver}{
+\section{jBittorrentAPI.MessageReceiver Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_message_receiver}\index{jBittorrentAPI::MessageReceiver@{jBittorrentAPI::MessageReceiver}}
+}
+Collaboration diagram for jBittorrentAPI.MessageReceiver:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_message_receiver_ad6b379ea7fae866a042bcec60d443692}{MessageReceiver} (String id, InputStream is)  throws IOException 
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_message_receiver_ac443b2bb4923cc0dc786624c2c8110be}{run} ()
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_receiver_a3083d3894f4e7a37e3af9e9b041f2de7}{
+void {\bfseries addIncomingListener} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_incoming_listener}{IncomingListener} listener)}
+\label{classj_bittorrent_a_p_i_1_1_message_receiver_a3083d3894f4e7a37e3af9e9b041f2de7}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_receiver_ac903c48a9ae33e5b7f1dd55530741767}{
+void {\bfseries removeIncomingListener} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_incoming_listener}{IncomingListener} listener)}
+\label{classj_bittorrent_a_p_i_1_1_message_receiver_ac903c48a9ae33e5b7f1dd55530741767}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_receiver_aeb50ee51a275eefa8008d39ffbc1eb7d}{
+\hyperlink{interfacej_bittorrent_a_p_i_1_1_incoming_listener}{IncomingListener}\mbox{[}$\,$\mbox{]} {\bfseries getIncomingListeners} ()}
+\label{classj_bittorrent_a_p_i_1_1_message_receiver_aeb50ee51a275eefa8008d39ffbc1eb7d}
+
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_message_receiver_a88af317cab076caf36203622d169d95d}{stopThread} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_receiver_a9009d109e9044908640551bf6488143e}{
+void {\bfseries fireMessageReceived} (\hyperlink{classj_bittorrent_a_p_i_1_1_message}{Message} m)}
+\label{classj_bittorrent_a_p_i_1_1_message_receiver_a9009d109e9044908640551bf6488143e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Thread created to listen for incoming message from remote peers. When data is read, message type is determined and a new \hyperlink{classj_bittorrent_a_p_i_1_1_message}{Message} object (either \hyperlink{classj_bittorrent_a_p_i_1_1_message___h_s}{Message\_\-HS} or \hyperlink{classj_bittorrent_a_p_i_1_1_message___p_p}{Message\_\-PP}) is created and passed to the corresponding receiver 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_receiver_ad6b379ea7fae866a042bcec60d443692}{
+\index{jBittorrentAPI::MessageReceiver@{jBittorrentAPI::MessageReceiver}!MessageReceiver@{MessageReceiver}}
+\index{MessageReceiver@{MessageReceiver}!jBittorrentAPI::MessageReceiver@{jBittorrentAPI::MessageReceiver}}
+\subsubsection[{MessageReceiver}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.MessageReceiver.MessageReceiver (String {\em id}, \/  InputStream {\em is})  throws IOException }}
+\label{classj_bittorrent_a_p_i_1_1_message_receiver_ad6b379ea7fae866a042bcec60d443692}
+Create a new \hyperlink{classj_bittorrent_a_p_i_1_1_message}{Message} receiver for a given peer 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]The id of the peer that has been assigned this receiver \item[{\em is}]InputStream \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em IOException}]\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_message_receiver_ac443b2bb4923cc0dc786624c2c8110be}{
+\index{jBittorrentAPI::MessageReceiver@{jBittorrentAPI::MessageReceiver}!run@{run}}
+\index{run@{run}!jBittorrentAPI::MessageReceiver@{jBittorrentAPI::MessageReceiver}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.MessageReceiver.run ()}}
+\label{classj_bittorrent_a_p_i_1_1_message_receiver_ac443b2bb4923cc0dc786624c2c8110be}
+Reads data from the inputstream, creates new messages according to the received data and fires MessageReceived method of the listeners with the new message in parameter. Loops as long as the 'run' variable is true \hypertarget{classj_bittorrent_a_p_i_1_1_message_receiver_a88af317cab076caf36203622d169d95d}{
+\index{jBittorrentAPI::MessageReceiver@{jBittorrentAPI::MessageReceiver}!stopThread@{stopThread}}
+\index{stopThread@{stopThread}!jBittorrentAPI::MessageReceiver@{jBittorrentAPI::MessageReceiver}}
+\subsubsection[{stopThread}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.MessageReceiver.stopThread ()}}
+\label{classj_bittorrent_a_p_i_1_1_message_receiver_a88af317cab076caf36203622d169d95d}
+Stops the current thread by completing the \hyperlink{classj_bittorrent_a_p_i_1_1_message_receiver_ac443b2bb4923cc0dc786624c2c8110be}{run()} method 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/MessageReceiver.java\end{DoxyCompactItemize}

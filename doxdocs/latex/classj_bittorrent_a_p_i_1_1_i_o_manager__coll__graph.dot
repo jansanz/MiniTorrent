@@ -1,0 +1,11 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="jBittorrentAPI.IOManager",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="lm"];
+  Node2 [label="jBittorrentAPI.LogManager",height=0.2,width=0.4,color="black",URL="$classj_bittorrent_a_p_i_1_1_log_manager.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="os"];
+  Node3 [label="OutputStream",height=0.2,width=0.4,color="grey75"];
+}

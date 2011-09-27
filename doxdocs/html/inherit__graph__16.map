@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$interfacej_bittorrent_a_p_i_1_1_con_listener_interface.html" title="jBittorrentAPI.ConListenerInterface" alt="" coords="7,5,276,32"/>
+<area shape="rect" href="$classj_bittorrent_a_p_i_1_1_download_manager.html" title="jBittorrentAPI.DownloadManager" alt="" coords="327,56,580,83"/>
+<area shape="rect" href="$interfacej_bittorrent_a_p_i_1_1_d_t_listener.html" title="jBittorrentAPI.DTListener" alt="" coords="44,56,239,83"/>
+<area shape="rect" href="$interfacej_bittorrent_a_p_i_1_1_peer_update_listener.html" title="jBittorrentAPI.PeerUpdateListener" alt="" coords="11,107,272,133"/>
+</map>

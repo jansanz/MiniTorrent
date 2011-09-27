@@ -1,0 +1,149 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener}{
+\section{jBittorrentAPI.ConnectionListener Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener}\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+}
+Collaboration diagram for jBittorrentAPI.ConnectionListener:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a7e1f5aaad1ed26e707bc91b7e913eff7}{
+{\bfseries ConnectionListener} (int minPort, int maxPort)}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a7e1f5aaad1ed26e707bc91b7e913eff7}
+
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_ac20a333270dedd9da96f17b7c51b712a}{getConnectedPort} ()
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_abbc53be91686fc734c3614599dc05b61}{getMinPort} ()
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_a2955a07eb43d334e278b01215b93b830}{getMaxPort} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_a4f09e7b9a9958e47a474c16d063e610f}{setMinPort} (int minPort)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_a2347c592c92fadb16db0670aaa7e4bc6}{setMaxPort} (int maxPort)
+\item 
+boolean \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_a386740f5e18aeeeae7c43c9debe0744e}{connect} (int minPort, int maxPort)
+\item 
+boolean \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_a973370bdec55e913c544902f89512c93}{connect} ()
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a69a752f4959012314b32c5647001053a}{
+void {\bfseries run} ()}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a69a752f4959012314b32c5647001053a}
+
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_a9ce7e9af2b58633fd8ba05816ba8eaa0}{setAccept} (boolean accept)
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_aa02f6fee7bbec9d68cb4a7ea377350ff}{
+void {\bfseries addConListenerInterface} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_con_listener_interface}{ConListenerInterface} listener)}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_aa02f6fee7bbec9d68cb4a7ea377350ff}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_adb8f0383f4d751fe51d999500566c7c5}{
+void {\bfseries removeConListenerInterface} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_con_listener_interface}{ConListenerInterface} listener)}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_adb8f0383f4d751fe51d999500566c7c5}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a899e3b430c6168af1e1f5368face538f}{
+\hyperlink{interfacej_bittorrent_a_p_i_1_1_con_listener_interface}{ConListenerInterface}\mbox{[}$\,$\mbox{]} {\bfseries getConListenerInterfaces} ()}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a899e3b430c6168af1e1f5368face538f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener_aca6fadfba821799d0c47ca04fee3e963}{fireConnectionAccepted} (Socket s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Thread that can listen for remote peers connection tries to this client
+
+\begin{DoxyAuthor}{Author}
+Baptiste Dubuis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a973370bdec55e913c544902f89512c93}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!connect@{connect}}
+\index{connect@{connect}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}boolean jBittorrentAPI.ConnectionListener.connect ()}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a973370bdec55e913c544902f89512c93}
+Try to create a server socket for remote peers to connect on within current port range \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a386740f5e18aeeeae7c43c9debe0744e}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!connect@{connect}}
+\index{connect@{connect}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}boolean jBittorrentAPI.ConnectionListener.connect (int {\em minPort}, \/  int {\em maxPort})}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a386740f5e18aeeeae7c43c9debe0744e}
+Try to create a server socket for remote peers to connect on within the specified port range 
+\begin{DoxyParams}{Parameters}
+\item[{\em minPort}]The minimal port number this client should listen on \item[{\em maxPort}]The maximal port number this client should listen on \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_aca6fadfba821799d0c47ca04fee3e963}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!fireConnectionAccepted@{fireConnectionAccepted}}
+\index{fireConnectionAccepted@{fireConnectionAccepted}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{fireConnectionAccepted}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.ConnectionListener.fireConnectionAccepted (Socket {\em s})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_aca6fadfba821799d0c47ca04fee3e963}
+Method used to send message to all object currently listening on this thread when a new connection has been accepted. It provides the socket the connection is bound to.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]Socket \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_ac20a333270dedd9da96f17b7c51b712a}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!getConnectedPort@{getConnectedPort}}
+\index{getConnectedPort@{getConnectedPort}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{getConnectedPort}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.ConnectionListener.getConnectedPort ()}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_ac20a333270dedd9da96f17b7c51b712a}
+Returns the port this client is listening on \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a2955a07eb43d334e278b01215b93b830}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!getMaxPort@{getMaxPort}}
+\index{getMaxPort@{getMaxPort}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{getMaxPort}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.ConnectionListener.getMaxPort ()}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a2955a07eb43d334e278b01215b93b830}
+Returns the maximal port number this client will try to listen on \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_abbc53be91686fc734c3614599dc05b61}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!getMinPort@{getMinPort}}
+\index{getMinPort@{getMinPort}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{getMinPort}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.ConnectionListener.getMinPort ()}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_abbc53be91686fc734c3614599dc05b61}
+Returns the minimal port number this client will try to listen on \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a9ce7e9af2b58633fd8ba05816ba8eaa0}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!setAccept@{setAccept}}
+\index{setAccept@{setAccept}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{setAccept}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.ConnectionListener.setAccept (boolean {\em accept})}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a9ce7e9af2b58633fd8ba05816ba8eaa0}
+Decides if the client should accept or not future connection 
+\begin{DoxyParams}{Parameters}
+\item[{\em accept}]true if it should accept, false otherwise \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a2347c592c92fadb16db0670aaa7e4bc6}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!setMaxPort@{setMaxPort}}
+\index{setMaxPort@{setMaxPort}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{setMaxPort}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.ConnectionListener.setMaxPort (int {\em maxPort})}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a2347c592c92fadb16db0670aaa7e4bc6}
+Sets the minimal port number this client will try to listen on 
+\begin{DoxyParams}{Parameters}
+\item[{\em maxPort}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_listener_a4f09e7b9a9958e47a474c16d063e610f}{
+\index{jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}!setMinPort@{setMinPort}}
+\index{setMinPort@{setMinPort}!jBittorrentAPI::ConnectionListener@{jBittorrentAPI::ConnectionListener}}
+\subsubsection[{setMinPort}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.ConnectionListener.setMinPort (int {\em minPort})}}
+\label{classj_bittorrent_a_p_i_1_1_connection_listener_a4f09e7b9a9958e47a474c16d063e610f}
+Sets the minimal port number this client will try to listen on 
+\begin{DoxyParams}{Parameters}
+\item[{\em minPort}]int \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/ConnectionListener.java\end{DoxyCompactItemize}

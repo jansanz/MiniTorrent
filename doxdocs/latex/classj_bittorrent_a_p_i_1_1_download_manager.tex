@@ -1,0 +1,414 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager}{
+\section{jBittorrentAPI.DownloadManager Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_download_manager}\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+}
+
+
+Inherits \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{jBittorrentAPI::DTListener}, \hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{jBittorrentAPI::PeerUpdateListener}, and \hyperlink{interfacej_bittorrent_a_p_i_1_1_con_listener_interface}{jBittorrentAPI::ConListenerInterface}.Collaboration diagram for jBittorrentAPI.DownloadManager:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a8fd6a72325826a055cf5a7c85d80830a}{DownloadManager} (\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} torrent, final byte\mbox{[}$\,$\mbox{]} clientID, JTextArea log, JProgressBar jp, JLabel speedLabel)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a938bc914b3c42f488705aa8e6c5d0ae8}{setProgress} (int percent)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a2ddf8d8a8c0c6e862cc861aded87e0a2}{setSpeed} (long speed)
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a5d26bedd9e30749e06f4b0a0996b626d}{
+boolean {\bfseries testComplete} (int piece)}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a5d26bedd9e30749e06f4b0a0996b626d}
+
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_aa52ddecb362a7f462dafc8b9181bf61e}{blockUntilCompletion} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a5d9bd7a64a0747d9440c5bcffc23e485}{startTrackerUpdate} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a6fe29d22cb0d273f57e4ae1889f482f9}{stopTrackerUpdate} ()
+\item 
+boolean \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_aef5ce5f1d5f07d30b00f18d52b52c0ec}{startListening} (int minPort, int maxPort)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_af9d07141554f5d99cc69d928a62f4bb5}{closeTempFiles} ()
+\item 
+synchronized int \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a8eb7c238409f2d32b62aef6a7a02bbcb}{checkTempFiles} ()
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a2fc9b7a2b7466ed76061ec97d7b0d931}{savePiece} (int piece)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_af5eb8ee54fc43f223e393b3814d0f3e9}{save} ()
+\item 
+synchronized boolean \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a5fc8c9ae5c091bf5e4fd2ee8bbd47072}{isComplete} ()
+\item 
+synchronized int \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a08e44d470aa35a70f47c569e4b65b84b}{cardinalityR} ()
+\item 
+synchronized \hyperlink{classj_bittorrent_a_p_i_1_1_piece}{Piece} \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a2c576788704ea89a2449e470fc02c955}{getPiece} (int index)
+\item 
+synchronized boolean \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a4c5841b55bbd3b45e4fd89d049802579}{isPieceComplete} (int piece)
+\item 
+synchronized boolean \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a98e02f682d704a0aea83859210d561bd}{isPieceRequested} (int piece)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a77f2cb90c39d9aa0a0917c7221593496}{setComplete} (int piece, boolean is)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a25c9eae498059d4de7b7642e5cd30498}{setRequested} (int piece, boolean is)
+\item 
+synchronized String \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a36b75b950fbf07a4e7b7402eb1bd2307}{requestedBits} ()
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a1b52fff0ffb273927c74137371efaa6b}{taskCompleted} (String id, int reason)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_adbcd4f5283d6658ab48a9688c6dba0ca}{pieceCompleted} (String peerID, int i, boolean complete)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_aa2ca48fc9e354d7995b451703780ba7a}{pieceRequested} (int i, boolean requested)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a5a0a15af5eee295adb93fa5f218bbfc3}{peerReady} (String peerID)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a0640ab4a739aac77045c288a26118a0c}{peerRequest} (String peerID, int piece, int begin, int length)
+\item 
+synchronized byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_aafe1b46b577a081aa52db87db81240f7}{getPieceFromFiles} (int piece)
+\item 
+synchronized byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_ad1e35cf49af550e1a2c47cf6c573a0ec}{getPieceBlock} (int piece, int begin, int length)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_ae8ce95ab44d21aeba95218aab682c21a}{peerAvailability} (String peerID, BitSet has)
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a554fa1431b5735e733f6fe49e7afa1b9}{
+synchronized void {\bfseries connect} (\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} p)}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a554fa1431b5735e733f6fe49e7afa1b9}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_ae6474d3735a8b2feccde3d8b4ee2458f}{
+synchronized void {\bfseries disconnect} (\hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} p)}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_ae6474d3735a8b2feccde3d8b4ee2458f}
+
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a04d9d710297689ef852f92f8b1407e33}{updatePeerList} (LinkedHashMap list)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a2c67828f0474dc0a8a104cb70ad676fb}{updateFailed} (int error, String message)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a753e445be7616198024e9e7eefdede79}{addActiveTask} (String id, \hyperlink{classj_bittorrent_a_p_i_1_1_download_task}{DownloadTask} dt)
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a5e63578834159ff3471d3f6cfe6bfc5d}{connectionAccepted} (Socket s)
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_download_manager_a04fb67e897432a490950863e2d9c7d32}{getBitField} ()
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a8cc9b50440ef11e972bb665aa8076642}{
+float {\bfseries getCompleted} ()}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a8cc9b50440ef11e972bb665aa8076642}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a384cfe67c4829d53c35b6ac8cfa3cbd0}{
+float {\bfseries getDLRate} ()}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a384cfe67c4829d53c35b6ac8cfa3cbd0}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a55980980c2e924f37d3e357d327bef1b}{
+float {\bfseries getULRate} ()}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a55980980c2e924f37d3e357d327bef1b}
+
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a4c56552ac54e21a08dfd058714adf498}{
+LinkedHashMap {\bfseries unchoken} = new LinkedHashMap$<$String, Integer$>$()}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a4c56552ac54e21a08dfd058714adf498}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Object that manages all concurrent downloads. It chooses which piece to request to which peer. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a8fd6a72325826a055cf5a7c85d80830a}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!DownloadManager@{DownloadManager}}
+\index{DownloadManager@{DownloadManager}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{DownloadManager}]{\setlength{\rightskip}{0pt plus 5cm}jBittorrentAPI.DownloadManager.DownloadManager ({\bf TorrentFile} {\em torrent}, \/  final byte\mbox{[}$\,$\mbox{]} {\em clientID}, \/  JTextArea {\em log}, \/  JProgressBar {\em jp}, \/  JLabel {\em speedLabel})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a8fd6a72325826a055cf5a7c85d80830a}
+Create a new manager according to the given torrent and using the client id provided 
+\begin{DoxyParams}{Parameters}
+\item[{\em torrent}]\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \item[{\em clientID}]byte\mbox{[}\mbox{]} \end{DoxyParams}
+
+
+Construct all the pieces with the correct length and hash value
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a753e445be7616198024e9e7eefdede79}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!addActiveTask@{addActiveTask}}
+\index{addActiveTask@{addActiveTask}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{addActiveTask}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.addActiveTask (String {\em id}, \/  {\bf DownloadTask} {\em dt})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a753e445be7616198024e9e7eefdede79}
+Add the download task to the list of active (i.e. Handshake is ok) tasks 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]String \item[{\em dt}]\hyperlink{classj_bittorrent_a_p_i_1_1_download_task}{DownloadTask} \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{jBittorrentAPI.DTListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_aa52ddecb362a7f462dafc8b9181bf61e}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!blockUntilCompletion@{blockUntilCompletion}}
+\index{blockUntilCompletion@{blockUntilCompletion}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{blockUntilCompletion}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadManager.blockUntilCompletion ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_aa52ddecb362a7f462dafc8b9181bf61e}
+Periodically call the unchokePeers method. This is an infinite loop. User have to exit with Ctrl+C, which is not good... Todo is change this method... \hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a08e44d470aa35a70f47c569e4b65b84b}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!cardinalityR@{cardinalityR}}
+\index{cardinalityR@{cardinalityR}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{cardinalityR}]{\setlength{\rightskip}{0pt plus 5cm}synchronized int jBittorrentAPI.DownloadManager.cardinalityR ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a08e44d470aa35a70f47c569e4b65b84b}
+Returns the number of pieces currently requested to peers \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a8eb7c238409f2d32b62aef6a7a02bbcb}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!checkTempFiles@{checkTempFiles}}
+\index{checkTempFiles@{checkTempFiles}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{checkTempFiles}]{\setlength{\rightskip}{0pt plus 5cm}synchronized int jBittorrentAPI.DownloadManager.checkTempFiles ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a8eb7c238409f2d32b62aef6a7a02bbcb}
+Check the existence of the files specified in the torrent and if necessary, create them
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{todo__todo000003}{Todo}]Should return an integer representing some error message... \end{Desc}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_af9d07141554f5d99cc69d928a62f4bb5}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!closeTempFiles@{closeTempFiles}}
+\index{closeTempFiles@{closeTempFiles}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{closeTempFiles}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadManager.closeTempFiles ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_af9d07141554f5d99cc69d928a62f4bb5}
+Close all open files \hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a5e63578834159ff3471d3f6cfe6bfc5d}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!connectionAccepted@{connectionAccepted}}
+\index{connectionAccepted@{connectionAccepted}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{connectionAccepted}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.connectionAccepted (Socket {\em s})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a5e63578834159ff3471d3f6cfe6bfc5d}
+Called when a new peer connects to the client. Check if it is already registered in the peer list, and if not, create a new \hyperlink{classj_bittorrent_a_p_i_1_1_download_task}{DownloadTask} for it 
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]Socket \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_con_listener_interface_ae9112eed45ca89e112dbe8bc7aba6716}{jBittorrentAPI.ConListenerInterface}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a04fb67e897432a490950863e2d9c7d32}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!getBitField@{getBitField}}
+\index{getBitField@{getBitField}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{getBitField}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.DownloadManager.getBitField ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a04fb67e897432a490950863e2d9c7d32}
+Compute the bitfield byte array from the isComplete BitSet \begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a2c576788704ea89a2449e470fc02c955}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!getPiece@{getPiece}}
+\index{getPiece@{getPiece}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{getPiece}]{\setlength{\rightskip}{0pt plus 5cm}synchronized {\bf Piece} jBittorrentAPI.DownloadManager.getPiece (int {\em index})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a2c576788704ea89a2449e470fc02c955}
+Returns the piece with the given index 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The piece index \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classj_bittorrent_a_p_i_1_1_piece}{Piece} The piece with the given index 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_ad1e35cf49af550e1a2c47cf6c573a0ec}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!getPieceBlock@{getPieceBlock}}
+\index{getPieceBlock@{getPieceBlock}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{getPieceBlock}]{\setlength{\rightskip}{0pt plus 5cm}synchronized byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.DownloadManager.getPieceBlock (int {\em piece}, \/  int {\em begin}, \/  int {\em length})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_ad1e35cf49af550e1a2c47cf6c573a0ec}
+Get a piece block from the existing file(s) 
+\begin{DoxyParams}{Parameters}
+\item[{\em piece}]int \item[{\em begin}]int \item[{\em length}]int \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_aafe1b46b577a081aa52db87db81240f7}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!getPieceFromFiles@{getPieceFromFiles}}
+\index{getPieceFromFiles@{getPieceFromFiles}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{getPieceFromFiles}]{\setlength{\rightskip}{0pt plus 5cm}synchronized byte \mbox{[}$\,$\mbox{]} jBittorrentAPI.DownloadManager.getPieceFromFiles (int {\em piece})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_aafe1b46b577a081aa52db87db81240f7}
+Load piece data from the existing files 
+\begin{DoxyParams}{Parameters}
+\item[{\em piece}]int \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a5fc8c9ae5c091bf5e4fd2ee8bbd47072}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!isComplete@{isComplete}}
+\index{isComplete@{isComplete}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{isComplete}]{\setlength{\rightskip}{0pt plus 5cm}synchronized boolean jBittorrentAPI.DownloadManager.isComplete ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a5fc8c9ae5c091bf5e4fd2ee8bbd47072}
+Check if the current download is complete \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a4c5841b55bbd3b45e4fd89d049802579}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!isPieceComplete@{isPieceComplete}}
+\index{isPieceComplete@{isPieceComplete}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{isPieceComplete}]{\setlength{\rightskip}{0pt plus 5cm}synchronized boolean jBittorrentAPI.DownloadManager.isPieceComplete (int {\em piece})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a4c5841b55bbd3b45e4fd89d049802579}
+Check if the piece with the given index is complete and verified 
+\begin{DoxyParams}{Parameters}
+\item[{\em piece}]The piece index \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a98e02f682d704a0aea83859210d561bd}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!isPieceRequested@{isPieceRequested}}
+\index{isPieceRequested@{isPieceRequested}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{isPieceRequested}]{\setlength{\rightskip}{0pt plus 5cm}synchronized boolean jBittorrentAPI.DownloadManager.isPieceRequested (int {\em piece})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a98e02f682d704a0aea83859210d561bd}
+Check if the piece with the given index is requested by a peer 
+\begin{DoxyParams}{Parameters}
+\item[{\em piece}]The piece index \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_ae8ce95ab44d21aeba95218aab682c21a}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!peerAvailability@{peerAvailability}}
+\index{peerAvailability@{peerAvailability}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{peerAvailability}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.peerAvailability (String {\em peerID}, \/  BitSet {\em has})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_ae8ce95ab44d21aeba95218aab682c21a}
+Update the piece availabilities for a given peer 
+\begin{DoxyParams}{Parameters}
+\item[{\em peerID}]String \item[{\em has}]BitSet \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{jBittorrentAPI.DTListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a5a0a15af5eee295adb93fa5f218bbfc3}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!peerReady@{peerReady}}
+\index{peerReady@{peerReady}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{peerReady}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.peerReady (String {\em peerID})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a5a0a15af5eee295adb93fa5f218bbfc3}
+Received when a task is ready to download or upload. In such a case, if there is a piece that can be downloaded from the corresponding peer, then request the piece 
+\begin{DoxyParams}{Parameters}
+\item[{\em peerID}]String \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{jBittorrentAPI.DTListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a0640ab4a739aac77045c288a26118a0c}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!peerRequest@{peerRequest}}
+\index{peerRequest@{peerRequest}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{peerRequest}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.peerRequest (String {\em peerID}, \/  int {\em piece}, \/  int {\em begin}, \/  int {\em length})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a0640ab4a739aac77045c288a26118a0c}
+Received when a peer request a piece. If the piece is available (which should always be the case according to Bittorrent protocol) and we are able and willing to upload, the send the piece to the peer 
+\begin{DoxyParams}{Parameters}
+\item[{\em peerID}]String \item[{\em piece}]int \item[{\em begin}]int \item[{\em length}]int \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{jBittorrentAPI.DTListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_adbcd4f5283d6658ab48a9688c6dba0ca}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!pieceCompleted@{pieceCompleted}}
+\index{pieceCompleted@{pieceCompleted}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{pieceCompleted}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.pieceCompleted (String {\em peerID}, \/  int {\em i}, \/  boolean {\em complete})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_adbcd4f5283d6658ab48a9688c6dba0ca}
+Received when a piece has been fully downloaded by a task. The piece might have been corrupted, in which case the manager will request it again later. If it has been successfully downloaded and verified, the piece status is set to 'complete', a 'HAVE' message is sent to all connected peers and the piece is saved into the corresponding file(s) 
+\begin{DoxyParams}{Parameters}
+\item[{\em peerID}]String \item[{\em i}]int \item[{\em complete}]boolean \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{jBittorrentAPI.DTListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_aa2ca48fc9e354d7995b451703780ba7a}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!pieceRequested@{pieceRequested}}
+\index{pieceRequested@{pieceRequested}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{pieceRequested}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.pieceRequested (int {\em i}, \/  boolean {\em requested})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_aa2ca48fc9e354d7995b451703780ba7a}
+Set the status of the piece to requested or not 
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]int \item[{\em requested}]boolean \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{jBittorrentAPI.DTListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a36b75b950fbf07a4e7b7402eb1bd2307}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!requestedBits@{requestedBits}}
+\index{requestedBits@{requestedBits}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{requestedBits}]{\setlength{\rightskip}{0pt plus 5cm}synchronized String jBittorrentAPI.DownloadManager.requestedBits ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a36b75b950fbf07a4e7b7402eb1bd2307}
+Returns a String representing the piece being requested by peers. Used only for pretty-\/printing. \begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_af5eb8ee54fc43f223e393b3814d0f3e9}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!save@{save}}
+\index{save@{save}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.save ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_af5eb8ee54fc43f223e393b3814d0f3e9}
+Save the downloaded files into the corresponding directories \begin{Desc}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]\end{Desc}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a2fc9b7a2b7466ed76061ec97d7b0d931}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!savePiece@{savePiece}}
+\index{savePiece@{savePiece}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{savePiece}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.savePiece (int {\em piece})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a2fc9b7a2b7466ed76061ec97d7b0d931}
+Save a piece in the corresponding file(s) 
+\begin{DoxyParams}{Parameters}
+\item[{\em piece}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a77f2cb90c39d9aa0a0917c7221593496}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!setComplete@{setComplete}}
+\index{setComplete@{setComplete}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{setComplete}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.setComplete (int {\em piece}, \/  boolean {\em is})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a77f2cb90c39d9aa0a0917c7221593496}
+Mark a piece as complete or not according to the parameters 
+\begin{DoxyParams}{Parameters}
+\item[{\em piece}]The index of the piece to be updated \item[{\em is}]True if the piece is now complete, false otherwise \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a938bc914b3c42f488705aa8e6c5d0ae8}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!setProgress@{setProgress}}
+\index{setProgress@{setProgress}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{setProgress}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadManager.setProgress (int {\em percent})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a938bc914b3c42f488705aa8e6c5d0ae8}
+Updates the progress bar in the GUI 
+\begin{DoxyParams}{Parameters}
+\item[{\em percent}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a25c9eae498059d4de7b7642e5cd30498}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!setRequested@{setRequested}}
+\index{setRequested@{setRequested}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{setRequested}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.setRequested (int {\em piece}, \/  boolean {\em is})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a25c9eae498059d4de7b7642e5cd30498}
+Mark a piece as requested or not according to the parameters 
+\begin{DoxyParams}{Parameters}
+\item[{\em piece}]The index of the piece to be updated \item[{\em is}]True if the piece is now requested, false otherwise \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a2ddf8d8a8c0c6e862cc861aded87e0a2}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{setSpeed}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadManager.setSpeed (long {\em speed})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a2ddf8d8a8c0c6e862cc861aded87e0a2}
+Changes the speed in the GUI 
+\begin{DoxyParams}{Parameters}
+\item[{\em speed}]long \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_aef5ce5f1d5f07d30b00f18d52b52c0ec}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!startListening@{startListening}}
+\index{startListening@{startListening}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{startListening}]{\setlength{\rightskip}{0pt plus 5cm}boolean jBittorrentAPI.DownloadManager.startListening (int {\em minPort}, \/  int {\em maxPort})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_aef5ce5f1d5f07d30b00f18d52b52c0ec}
+Create the \hyperlink{classj_bittorrent_a_p_i_1_1_connection_listener}{ConnectionListener} to accept incoming connection from peers 
+\begin{DoxyParams}{Parameters}
+\item[{\em minPort}]The minimal port number this client should listen on \item[{\em maxPort}]The maximal port number this client should listen on \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the listening process is started, false else 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{todo__todo000002}{Todo}]Should it really be here? Better create it in the implementation \end{Desc}
+\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a5d9bd7a64a0747d9440c5bcffc23e485}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!startTrackerUpdate@{startTrackerUpdate}}
+\index{startTrackerUpdate@{startTrackerUpdate}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{startTrackerUpdate}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadManager.startTrackerUpdate ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a5d9bd7a64a0747d9440c5bcffc23e485}
+Create and start the peer updater to retrieve new peers sharing the file \hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a6fe29d22cb0d273f57e4ae1889f482f9}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!stopTrackerUpdate@{stopTrackerUpdate}}
+\index{stopTrackerUpdate@{stopTrackerUpdate}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{stopTrackerUpdate}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadManager.stopTrackerUpdate ()}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a6fe29d22cb0d273f57e4ae1889f482f9}
+Stop the tracker updates \hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a1b52fff0ffb273927c74137371efaa6b}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!taskCompleted@{taskCompleted}}
+\index{taskCompleted@{taskCompleted}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{taskCompleted}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.taskCompleted (String {\em id}, \/  int {\em reason})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a1b52fff0ffb273927c74137371efaa6b}
+Removes a task and peer after the task sends a completion message. Completion can be caused by an error (bad request, ...) or simply by the end of the connection 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]Task idendity \item[{\em reason}]Reason of the completion \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_d_t_listener}{jBittorrentAPI.DTListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a2c67828f0474dc0a8a104cb70ad676fb}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!updateFailed@{updateFailed}}
+\index{updateFailed@{updateFailed}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{updateFailed}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.DownloadManager.updateFailed (int {\em error}, \/  String {\em message})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a2c67828f0474dc0a8a104cb70ad676fb}
+Called when an update try fail. At the moment, simply display a message 
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]int \item[{\em message}]String \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{jBittorrentAPI.PeerUpdateListener}.\hypertarget{classj_bittorrent_a_p_i_1_1_download_manager_a04d9d710297689ef852f92f8b1407e33}{
+\index{jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}!updatePeerList@{updatePeerList}}
+\index{updatePeerList@{updatePeerList}!jBittorrentAPI::DownloadManager@{jBittorrentAPI::DownloadManager}}
+\subsubsection[{updatePeerList}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.DownloadManager.updatePeerList (LinkedHashMap {\em list})}}
+\label{classj_bittorrent_a_p_i_1_1_download_manager_a04d9d710297689ef852f92f8b1407e33}
+Given the list in parameter, check if the peers are already present in the peer list. If not, then add them and create a new task for them 
+\begin{DoxyParams}{Parameters}
+\item[{\em list}]LinkedHashMap \end{DoxyParams}
+
+
+Implements \hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{jBittorrentAPI.PeerUpdateListener}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/DownloadManager.java\end{DoxyCompactItemize}

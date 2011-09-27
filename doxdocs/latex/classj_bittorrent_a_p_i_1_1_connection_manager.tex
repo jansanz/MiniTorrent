@@ -1,0 +1,43 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_manager}{
+\section{jBittorrentAPI.ConnectionManager Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_connection_manager}\index{jBittorrentAPI::ConnectionManager@{jBittorrentAPI::ConnectionManager}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classj_bittorrent_a_p_i_1_1_connection_manager_adaa7d85013828269c09037be26f8ea2e}{downloadFile} (String host, int port, String filename, String renameFile)
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_manager_a2d5d9008289e518db88841b11933e68b}{
+static boolean {\bfseries publish} (String torrentPath)}
+\label{classj_bittorrent_a_p_i_1_1_connection_manager_a2d5d9008289e518db88841b11933e68b}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_manager_aeb957819a76ee0dd198933021b4af982}{
+static boolean {\bfseries publish} (String torrentPath, String trackerName, String username, String pwd, String torrentRename, String info, String comment, String catid)}
+\label{classj_bittorrent_a_p_i_1_1_connection_manager_aeb957819a76ee0dd198933021b4af982}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides methods for interaction with remote host, like downloading or uploading files using HTTP protocol. \begin{Desc}
+\item[\hyperlink{todo__todo000001}{Todo}]Optimize publish method to be able to specify (for example in a xml file) the protocol to upload files to a given website \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_connection_manager_adaa7d85013828269c09037be26f8ea2e}{
+\index{jBittorrentAPI::ConnectionManager@{jBittorrentAPI::ConnectionManager}!downloadFile@{downloadFile}}
+\index{downloadFile@{downloadFile}!jBittorrentAPI::ConnectionManager@{jBittorrentAPI::ConnectionManager}}
+\subsubsection[{downloadFile}]{\setlength{\rightskip}{0pt plus 5cm}static boolean jBittorrentAPI.ConnectionManager.downloadFile (String {\em host}, \/  int {\em port}, \/  String {\em filename}, \/  String {\em renameFile})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_connection_manager_adaa7d85013828269c09037be26f8ea2e}
+Download a file from a web site and save it according to the provided path 
+\begin{DoxyParams}{Parameters}
+\item[{\em host}]Name of the host the torrent is located on \item[{\em port}]Port of the host that provides the torrent file \item[{\em filename}]Path of the file on the host \item[{\em renameFile}]Path where the torrent will be saved \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True if the file has been successfully downloaded, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/ConnectionManager.java\end{DoxyCompactItemize}

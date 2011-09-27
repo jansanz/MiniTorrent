@@ -1,0 +1,269 @@
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater}{
+\section{jBittorrentAPI.PeerUpdater Class Reference}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater}\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+}
+Collaboration diagram for jBittorrentAPI.PeerUpdater:\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a3d5026cd5e9e8aee6d17425bba6059c9}{
+{\bfseries PeerUpdater} (byte\mbox{[}$\,$\mbox{]} id, \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} torrent, JTextArea log)}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a3d5026cd5e9e8aee6d17425bba6059c9}
+
+\item 
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_ac168e504c0b91496304f06cf796a7fb6}{
+void {\bfseries setListeningPort} (int port)}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_ac168e504c0b91496304f06cf796a7fb6}
+
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a280462ebe5bef4985d1bc25f18ef6361}{getInterval} ()
+\item 
+int \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_aaae6348e85643f01e4271e5adab95343}{getMinInterval} ()
+\item 
+long \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a191f9bf744b9ae2e5ff3a1b289d2a7e0}{getDownloaded} ()
+\item 
+long \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a4acde85b422ff44758973b2e4aa68329}{getUploaded} ()
+\item 
+long \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_adc746875b9491ce52a930b404b11e9db}{getLeft} ()
+\item 
+String \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a4d6807681ed998c8a118874a4ad96cfd}{getEvent} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_addc5a75c5178250e19a15bb1697f8789}{setInterval} (int interval)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a05728663a20a93596f60f4c1ce00464b}{setMinInterval} (int minInt)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a2e61605bc665ddcbd7eb27818e736757}{setDownloaded} (long dl)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_abdc2d078d4cc82cfe54fa438d14d2f7a}{setUploaded} (long ul)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_aec85a3a1ec6776a6a1c90189cd233e55}{setLeft} (long left)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_ae34cb08d19d949f34eb0cc328e2d40f6}{setEvent} (String event)
+\item 
+LinkedHashMap \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_ab7a3b7cfab6f53b0b5639e546ce9b28a}{getList} ()
+\item 
+synchronized void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_aa00f371b8c47900ba8b9ab6ed048a2b3}{updateParameters} (int dl, int ul, String event)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_ae394e8d995d2c0e21377356b5fe6bd20}{run} ()
+\item 
+synchronized LinkedHashMap$<$ String, \hyperlink{classj_bittorrent_a_p_i_1_1_peer}{Peer} $>$ \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_ac94613dd370de3f689e8b2a68cea22c9}{processResponse} (Map m)
+\item 
+synchronized Map \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_ad3ea391dbd2de9c4a5365a082ced4b10}{contactTracker} (byte\mbox{[}$\,$\mbox{]} id, \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} t, long dl, long ul, long left, String event)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_aa490aed641391fcc6777449c44872c25}{end} ()
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_ae0f20884a45817fec9f86f4647a9c348}{addPeerUpdateListener} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{PeerUpdateListener} listener)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_adb6e86e7512b62f68d86dd2c124277cb}{removePeerUpdateListener} (\hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{PeerUpdateListener} listener)
+\item 
+\hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{PeerUpdateListener}\mbox{[}$\,$\mbox{]} \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a63330888bcb78a7ac1b416850652d802}{getPeerUpdateListeners} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a660e9bcab08ec687992ce4ae43a21078}{fireUpdatePeerList} (LinkedHashMap l)
+\item 
+void \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater_a2dfaa68f550f920bc4099f4c6aee29a3}{fireUpdateFailed} (int error, String message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class providing methods to enable communication between the client and a tracker. Provide method to decode and parse tracker response.
+
+\begin{DoxyAuthor}{Author}
+Baptiste Dubuis 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_ae0f20884a45817fec9f86f4647a9c348}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!addPeerUpdateListener@{addPeerUpdateListener}}
+\index{addPeerUpdateListener@{addPeerUpdateListener}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{addPeerUpdateListener}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.addPeerUpdateListener ({\bf PeerUpdateListener} {\em listener})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_ae0f20884a45817fec9f86f4647a9c348}
+Adds a \hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{PeerUpdateListener} to the list of listeners, enabling communication with this object 
+\begin{DoxyParams}{Parameters}
+\item[{\em listener}]\hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{PeerUpdateListener} \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_ad3ea391dbd2de9c4a5365a082ced4b10}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!contactTracker@{contactTracker}}
+\index{contactTracker@{contactTracker}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{contactTracker}]{\setlength{\rightskip}{0pt plus 5cm}synchronized Map jBittorrentAPI.PeerUpdater.contactTracker (byte\mbox{[}$\,$\mbox{]} {\em id}, \/  {\bf TorrentFile} {\em t}, \/  long {\em dl}, \/  long {\em ul}, \/  long {\em left}, \/  String {\em event})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_ad3ea391dbd2de9c4a5365a082ced4b10}
+Contact the tracker according to the HTTP/HTTPS tracker protocol and using the information in the \hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]byte\mbox{[}\mbox{]} \item[{\em t}]\hyperlink{classj_bittorrent_a_p_i_1_1_torrent_file}{TorrentFile} \item[{\em dl}]long \item[{\em ul}]long \item[{\em left}]long \item[{\em event}]String \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Map containing the decoded tracker response 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_aa490aed641391fcc6777449c44872c25}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!end@{end}}
+\index{end@{end}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.end ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_aa490aed641391fcc6777449c44872c25}
+Stops the update process. This methods sends one last message to the tracker saying this client stops sharing the file and it also exits the run method \hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a2dfaa68f550f920bc4099f4c6aee29a3}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!fireUpdateFailed@{fireUpdateFailed}}
+\index{fireUpdateFailed@{fireUpdateFailed}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{fireUpdateFailed}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.fireUpdateFailed (int {\em error}, \/  String {\em message})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a2dfaa68f550f920bc4099f4c6aee29a3}
+Sends a message to all listeners with an error code and a String representing the reason why the last try to contact tracker failed 
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]int \item[{\em message}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a660e9bcab08ec687992ce4ae43a21078}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!fireUpdatePeerList@{fireUpdatePeerList}}
+\index{fireUpdatePeerList@{fireUpdatePeerList}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{fireUpdatePeerList}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.fireUpdatePeerList (LinkedHashMap {\em l})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a660e9bcab08ec687992ce4ae43a21078}
+Sends a message to all listeners with a HashMap containg the list of all peers present in the last tracker response 
+\begin{DoxyParams}{Parameters}
+\item[{\em l}]LinkedHashMap \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a191f9bf744b9ae2e5ff3a1b289d2a7e0}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!getDownloaded@{getDownloaded}}
+\index{getDownloaded@{getDownloaded}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{getDownloaded}]{\setlength{\rightskip}{0pt plus 5cm}long jBittorrentAPI.PeerUpdater.getDownloaded ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a191f9bf744b9ae2e5ff3a1b289d2a7e0}
+Returns the number of bytes that have been downloaded so far \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a4d6807681ed998c8a118874a4ad96cfd}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!getEvent@{getEvent}}
+\index{getEvent@{getEvent}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{getEvent}]{\setlength{\rightskip}{0pt plus 5cm}String jBittorrentAPI.PeerUpdater.getEvent ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a4d6807681ed998c8a118874a4ad96cfd}
+Returns the current event of the client \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a280462ebe5bef4985d1bc25f18ef6361}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!getInterval@{getInterval}}
+\index{getInterval@{getInterval}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{getInterval}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.PeerUpdater.getInterval ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a280462ebe5bef4985d1bc25f18ef6361}
+Returns the last interval for updates received from the tracker \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_adc746875b9491ce52a930b404b11e9db}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!getLeft@{getLeft}}
+\index{getLeft@{getLeft}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{getLeft}]{\setlength{\rightskip}{0pt plus 5cm}long jBittorrentAPI.PeerUpdater.getLeft ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_adc746875b9491ce52a930b404b11e9db}
+Returns the number of bytes still to download to complete task \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_ab7a3b7cfab6f53b0b5639e546ce9b28a}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!getList@{getList}}
+\index{getList@{getList}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{getList}]{\setlength{\rightskip}{0pt plus 5cm}LinkedHashMap jBittorrentAPI.PeerUpdater.getList ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_ab7a3b7cfab6f53b0b5639e546ce9b28a}
+Returns the list of peers in its current state \begin{DoxyReturn}{Returns}
+LinkedHashMap 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_aaae6348e85643f01e4271e5adab95343}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!getMinInterval@{getMinInterval}}
+\index{getMinInterval@{getMinInterval}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{getMinInterval}]{\setlength{\rightskip}{0pt plus 5cm}int jBittorrentAPI.PeerUpdater.getMinInterval ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_aaae6348e85643f01e4271e5adab95343}
+Returns the last minimal interval for updates received from the tracker \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a63330888bcb78a7ac1b416850652d802}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!getPeerUpdateListeners@{getPeerUpdateListeners}}
+\index{getPeerUpdateListeners@{getPeerUpdateListeners}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{getPeerUpdateListeners}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PeerUpdateListener} \mbox{[}$\,$\mbox{]} jBittorrentAPI.PeerUpdater.getPeerUpdateListeners ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a63330888bcb78a7ac1b416850652d802}
+Returns the list of object that are currently listening to this \hyperlink{classj_bittorrent_a_p_i_1_1_peer_updater}{PeerUpdater} \begin{DoxyReturn}{Returns}
+\hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{PeerUpdateListener}\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a4acde85b422ff44758973b2e4aa68329}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!getUploaded@{getUploaded}}
+\index{getUploaded@{getUploaded}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{getUploaded}]{\setlength{\rightskip}{0pt plus 5cm}long jBittorrentAPI.PeerUpdater.getUploaded ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a4acde85b422ff44758973b2e4aa68329}
+Returns the number of bytes that have been uploaded so far \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_ac94613dd370de3f689e8b2a68cea22c9}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!processResponse@{processResponse}}
+\index{processResponse@{processResponse}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{processResponse}]{\setlength{\rightskip}{0pt plus 5cm}synchronized LinkedHashMap$<$String, {\bf Peer}$>$ jBittorrentAPI.PeerUpdater.processResponse (Map {\em m})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_ac94613dd370de3f689e8b2a68cea22c9}
+Process the map representing the tracker response, which should contain either an error message or the peers list and other information such as the interval before next update, aso 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]The tracker response as a Map \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+LinkedHashMap A HashMap containing the peers and their ID as keys 
+\end{DoxyReturn}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_adb6e86e7512b62f68d86dd2c124277cb}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!removePeerUpdateListener@{removePeerUpdateListener}}
+\index{removePeerUpdateListener@{removePeerUpdateListener}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{removePeerUpdateListener}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.removePeerUpdateListener ({\bf PeerUpdateListener} {\em listener})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_adb6e86e7512b62f68d86dd2c124277cb}
+Removes a \hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{PeerUpdateListener} from the list of listeners 
+\begin{DoxyParams}{Parameters}
+\item[{\em listener}]\hyperlink{interfacej_bittorrent_a_p_i_1_1_peer_update_listener}{PeerUpdateListener} \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_ae394e8d995d2c0e21377356b5fe6bd20}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!run@{run}}
+\index{run@{run}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.run ()}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_ae394e8d995d2c0e21377356b5fe6bd20}
+Thread method that regularly contact the tracker and process its response \hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a2e61605bc665ddcbd7eb27818e736757}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!setDownloaded@{setDownloaded}}
+\index{setDownloaded@{setDownloaded}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{setDownloaded}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.setDownloaded (long {\em dl})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a2e61605bc665ddcbd7eb27818e736757}
+Sets the \# of bytes downloaded so far 
+\begin{DoxyParams}{Parameters}
+\item[{\em dl}]long \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_ae34cb08d19d949f34eb0cc328e2d40f6}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!setEvent@{setEvent}}
+\index{setEvent@{setEvent}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{setEvent}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.setEvent (String {\em event})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_ae34cb08d19d949f34eb0cc328e2d40f6}
+Sets the current state of the client 
+\begin{DoxyParams}{Parameters}
+\item[{\em event}]String \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_addc5a75c5178250e19a15bb1697f8789}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!setInterval@{setInterval}}
+\index{setInterval@{setInterval}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{setInterval}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.setInterval (int {\em interval})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_addc5a75c5178250e19a15bb1697f8789}
+Sets the interval between tracker update 
+\begin{DoxyParams}{Parameters}
+\item[{\em interval}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_aec85a3a1ec6776a6a1c90189cd233e55}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!setLeft@{setLeft}}
+\index{setLeft@{setLeft}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{setLeft}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.setLeft (long {\em left})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_aec85a3a1ec6776a6a1c90189cd233e55}
+Sets the \# of bytes still to download 
+\begin{DoxyParams}{Parameters}
+\item[{\em left}]long \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_a05728663a20a93596f60f4c1ce00464b}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!setMinInterval@{setMinInterval}}
+\index{setMinInterval@{setMinInterval}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{setMinInterval}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.setMinInterval (int {\em minInt})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_a05728663a20a93596f60f4c1ce00464b}
+Sets the mininterval between tracker update 
+\begin{DoxyParams}{Parameters}
+\item[{\em minInt}]int \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_abdc2d078d4cc82cfe54fa438d14d2f7a}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!setUploaded@{setUploaded}}
+\index{setUploaded@{setUploaded}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{setUploaded}]{\setlength{\rightskip}{0pt plus 5cm}void jBittorrentAPI.PeerUpdater.setUploaded (long {\em ul})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_abdc2d078d4cc82cfe54fa438d14d2f7a}
+Sets the \# of bytes uploaded so far 
+\begin{DoxyParams}{Parameters}
+\item[{\em ul}]long \end{DoxyParams}
+\hypertarget{classj_bittorrent_a_p_i_1_1_peer_updater_aa00f371b8c47900ba8b9ab6ed048a2b3}{
+\index{jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}!updateParameters@{updateParameters}}
+\index{updateParameters@{updateParameters}!jBittorrentAPI::PeerUpdater@{jBittorrentAPI::PeerUpdater}}
+\subsubsection[{updateParameters}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jBittorrentAPI.PeerUpdater.updateParameters (int {\em dl}, \/  int {\em ul}, \/  String {\em event})}}
+\label{classj_bittorrent_a_p_i_1_1_peer_updater_aa00f371b8c47900ba8b9ab6ed048a2b3}
+Update the parameters for future tracker communication 
+\begin{DoxyParams}{Parameters}
+\item[{\em dl}]int \item[{\em ul}]int \item[{\em event}]String \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+MiniTorrent/src/jBittorrentAPI/PeerUpdater.java\end{DoxyCompactItemize}
